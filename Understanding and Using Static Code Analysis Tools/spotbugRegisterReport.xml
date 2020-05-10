@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.1" sequence="40" timestamp="1587937796534" analysisTimestamp="1587937794970" release="">
+  <Project projectName="Spotbugs">
+    <Jar>C:\Users\gouta\eclipse-workspace\Spotbugs\bin\com\learnsecurity\Register.class</Jar>
+    <AuxClasspathEntry>C:\Users\gouta\eclipse-workspace\Spotbugs\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_251\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_251\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\gouta\eclipse-workspace\Spotbugs\src</SrcDir>
+  </Project>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="14">
+    <Class classname="com.learnsecurity.Analysis">
+      <SourceLine classname="com.learnsecurity.Analysis" sourcefile="Analysis.java" sourcepath="com/learnsecurity/Analysis.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Analysis" name="test" signature="()V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Analysis" start="12" end="22" startBytecode="0" endBytecode="193" sourcefile="Analysis.java" sourcepath="com/learnsecurity/Analysis.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.Analysis" start="17" end="17" startBytecode="38" endBytecode="38" sourcefile="Analysis.java" sourcepath="com/learnsecurity/Analysis.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="14">
+    <Class classname="com.learnsecurity.Analysis">
+      <SourceLine classname="com.learnsecurity.Analysis" sourcefile="Analysis.java" sourcepath="com/learnsecurity/Analysis.java"/>
+    </Class>
+    <Field classname="com.learnsecurity.Analysis" name="abc" signature="I" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Analysis" start="6" end="6" startBytecode="0" endBytecode="0" sourcefile="Analysis.java" sourcepath="com/learnsecurity/Analysis.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="CD_CIRCULAR_DEPENDENCY" priority="2" rank="17" abbrev="CD" category="STYLE" first="20" last="24" removedByChange="true">
+    <Class classname="com.learnsecurity.Client">
+      <SourceLine classname="com.learnsecurity.Client" start="51" end="297" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+    <Class classname="com.learnsecurity.Client$2">
+      <SourceLine classname="com.learnsecurity.Client$2" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="CD_CIRCULAR_DEPENDENCY" priority="2" rank="17" abbrev="CD" category="STYLE" first="20" last="24" removedByChange="true">
+    <Class classname="com.learnsecurity.Client">
+      <SourceLine classname="com.learnsecurity.Client" start="51" end="297" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+    <Class classname="com.learnsecurity.Client$3">
+      <SourceLine classname="com.learnsecurity.Client$3" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="CD_CIRCULAR_DEPENDENCY" priority="2" rank="17" abbrev="CD" category="STYLE" first="20" last="24" removedByChange="true">
+    <Class classname="com.learnsecurity.Client">
+      <SourceLine classname="com.learnsecurity.Client" start="51" end="297" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+    <Class classname="com.learnsecurity.Client$4">
+      <SourceLine classname="com.learnsecurity.Client$4" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="CD_CIRCULAR_DEPENDENCY" priority="2" rank="17" abbrev="CD" category="STYLE" first="20" last="24" removedByChange="true">
+    <Class classname="com.learnsecurity.Client">
+      <SourceLine classname="com.learnsecurity.Client" start="51" end="297" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+    <Class classname="com.learnsecurity.Client$5">
+      <SourceLine classname="com.learnsecurity.Client$5" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="20" last="24" removedByChange="true">
+    <Class classname="com.learnsecurity.Client">
+      <SourceLine classname="com.learnsecurity.Client" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Client" name="jButton3ActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Client" start="240" end="247" startBytecode="0" endBytecode="176" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.Client" start="246" end="246" startBytecode="56" endBytecode="56" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    <SourceLine classname="com.learnsecurity.Client" start="246" end="246" startBytecode="56" endBytecode="56" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+  </BugInstance>
+  <BugInstance type="CD_CIRCULAR_DEPENDENCY" priority="2" rank="17" abbrev="CD" category="STYLE" first="20" last="24" removedByChange="true">
+    <Class classname="com.learnsecurity.Client$1">
+      <SourceLine classname="com.learnsecurity.Client$1" start="57" end="76" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+    <Class classname="com.learnsecurity.Client">
+      <SourceLine classname="com.learnsecurity.Client" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="20" last="24" removedByChange="true">
+    <Class classname="com.learnsecurity.Client$1">
+      <SourceLine classname="com.learnsecurity.Client$1" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Client$1" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Client$1" start="66" end="62" startBytecode="0" endBytecode="199" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.Client$1" start="71" end="71" startBytecode="30" endBytecode="30" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+    <SourceLine classname="com.learnsecurity.Client$1" start="71" end="71" startBytecode="30" endBytecode="30" sourcefile="Client.java" sourcepath="com/learnsecurity/Client.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="24">
+    <Class classname="com.learnsecurity.ClientHandler">
+      <SourceLine classname="com.learnsecurity.ClientHandler" sourcefile="Server.java" sourcepath="com/learnsecurity/Server.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.ClientHandler" name="&lt;init&gt;" signature="(Ljava/net/Socket;Ljava/lang/String;Ljava/io/DataInputStream;Ljava/io/DataOutputStream;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.ClientHandler" start="77" end="84" startBytecode="0" endBytecode="154" sourcefile="Server.java" sourcepath="com/learnsecurity/Server.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.ClientHandler" start="69" end="69" startBytecode="12" endBytecode="12" sourcefile="Server.java" sourcepath="com/learnsecurity/Server.java"/>
+    <SourceLine classname="com.learnsecurity.ClientHandler" start="69" end="69" startBytecode="12" endBytecode="12" sourcefile="Server.java" sourcepath="com/learnsecurity/Server.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="24">
+    <Class classname="com.learnsecurity.ClientHandler">
+      <SourceLine classname="com.learnsecurity.ClientHandler" sourcefile="Server.java" sourcepath="com/learnsecurity/Server.java"/>
+    </Class>
+    <Field classname="com.learnsecurity.ClientHandler" name="scn" signature="Ljava/util/Scanner;" isStatic="false">
+      <SourceLine classname="com.learnsecurity.ClientHandler" sourcefile="Server.java" sourcepath="com/learnsecurity/Server.java"/>
+    </Field>
+    <SourceLine classname="com.learnsecurity.ClientHandler" start="69" end="69" startBytecode="15" endBytecode="15" sourcefile="Server.java" sourcepath="com/learnsecurity/Server.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="17">
+    <Class classname="com.learnsecurity.FileUtility">
+      <SourceLine classname="com.learnsecurity.FileUtility" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.FileUtility" name="toFile_bad" signature="(Ljava/lang/String;Ljava/io/File;)V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.FileUtility" start="20" end="22" startBytecode="0" endBytecode="84" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.FileUtility" start="20" end="20" startBytecode="5" endBytecode="5" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+    <SourceLine classname="com.learnsecurity.FileUtility" start="20" end="20" startBytecode="5" endBytecode="5" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="17">
+    <Class classname="com.learnsecurity.FileUtility">
+      <SourceLine classname="com.learnsecurity.FileUtility" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.FileUtility" name="toFile_bad" signature="(Ljava/lang/String;Ljava/io/File;)V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.FileUtility" start="20" end="22" startBytecode="0" endBytecode="84" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+    </Method>
+    <Class classname="java.io.Writer" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Writer"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="com.learnsecurity.FileUtility" start="20" end="20" startBytecode="5" endBytecode="5" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="com.learnsecurity.FileUtility" start="21" end="21" startBytecode="9" endBytecode="9" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.FileUtility" start="22" end="22" startBytecode="14" endBytecode="14" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Writer x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="17">
+    <Class classname="com.learnsecurity.FileUtility">
+      <SourceLine classname="com.learnsecurity.FileUtility" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.FileUtility" name="toFile_bad" signature="(Ljava/lang/String;Ljava/io/File;)V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.FileUtility" start="20" end="22" startBytecode="0" endBytecode="8" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Writer;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Writer"/>
+    </Type>
+    <SourceLine classname="com.learnsecurity.FileUtility" start="20" end="20" startBytecode="0" endBytecode="0" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+    <SourceLine classname="com.learnsecurity.FileUtility" start="20" end="20" startBytecode="0" endBytecode="0" sourcefile="FileUtility.java" sourcepath="com/learnsecurity/FileUtility.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="12">
+    <Class classname="com.learnsecurity.LongestCommonSubsequence">
+      <SourceLine classname="com.learnsecurity.LongestCommonSubsequence" sourcefile="LongestCommonSubsequence.java" sourcepath="com/learnsecurity/LongestCommonSubsequence.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.LongestCommonSubsequence" name="fileReader" signature="(Ljava/lang/String;)Ljava/util/List;" isStatic="true">
+      <SourceLine classname="com.learnsecurity.LongestCommonSubsequence" start="36" end="50" startBytecode="0" endBytecode="279" sourcefile="LongestCommonSubsequence.java" sourcepath="com/learnsecurity/LongestCommonSubsequence.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.LongestCommonSubsequence" start="38" end="38" startBytecode="17" endBytecode="17" sourcefile="LongestCommonSubsequence.java" sourcepath="com/learnsecurity/LongestCommonSubsequence.java"/>
+    <SourceLine classname="com.learnsecurity.LongestCommonSubsequence" start="38" end="38" startBytecode="17" endBytecode="17" sourcefile="LongestCommonSubsequence.java" sourcepath="com/learnsecurity/LongestCommonSubsequence.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="12">
+    <Class classname="com.learnsecurity.LongestCommonSubsequence">
+      <SourceLine classname="com.learnsecurity.LongestCommonSubsequence" sourcefile="LongestCommonSubsequence.java" sourcepath="com/learnsecurity/LongestCommonSubsequence.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.LongestCommonSubsequence" name="fileReader" signature="(Ljava/lang/String;)Ljava/util/List;" isStatic="true">
+      <SourceLine classname="com.learnsecurity.LongestCommonSubsequence" start="36" end="50" startBytecode="0" endBytecode="34" sourcefile="LongestCommonSubsequence.java" sourcepath="com/learnsecurity/LongestCommonSubsequence.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader"/>
+    </Type>
+    <SourceLine classname="com.learnsecurity.LongestCommonSubsequence" start="38" end="38" startBytecode="8" endBytecode="8" sourcefile="LongestCommonSubsequence.java" sourcepath="com/learnsecurity/LongestCommonSubsequence.java"/>
+    <SourceLine classname="com.learnsecurity.LongestCommonSubsequence" start="38" end="38" startBytecode="8" endBytecode="8" sourcefile="LongestCommonSubsequence.java" sourcepath="com/learnsecurity/LongestCommonSubsequence.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="32">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Register" name="IndividualValidation" signature="()V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.Register" start="44" end="50" startBytecode="0" endBytecode="12" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Method>
+    <LocalVariable name="dropDown" register="0" pc="5" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.learnsecurity.Register" start="45" end="45" startBytecode="4" endBytecode="4" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    <SourceLine classname="com.learnsecurity.Register" start="45" end="45" startBytecode="4" endBytecode="4" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="dropDown"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="22" last="29" removedByChange="true">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Register" name="IndividualValidation" signature="()V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.Register" start="34" end="40" startBytecode="0" endBytecode="12" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Method>
+    <LocalVariable name="value" register="0" pc="5" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.learnsecurity.Register" start="35" end="35" startBytecode="4" endBytecode="4" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    <SourceLine classname="com.learnsecurity.Register" start="35" end="35" startBytecode="4" endBytecode="4" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="value"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" rank="14" abbrev="Eq" category="BAD_PRACTICE" first="22" last="22" removedByChange="true">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Register" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Register" start="42" end="46" startBytecode="0" endBytecode="117" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <SourceLine classname="com.learnsecurity.Register" start="44" end="44" startBytecode="23" endBytecode="23" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    <SourceLine classname="com.learnsecurity.Register" start="44" end="44" startBytecode="23" endBytecode="23" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" first="22" last="22" removedByChange="true">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Register" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Register" start="42" end="46" startBytecode="0" endBytecode="117" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" first="22" last="22" removedByChange="true">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Register" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Register" start="42" end="46" startBytecode="0" endBytecode="117" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Method>
+    <Field classname="com.learnsecurity.Register" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Field>
+    <SourceLine classname="com.learnsecurity.Register" start="43" end="43" startBytecode="18" endBytecode="18" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    <SourceLine classname="com.learnsecurity.Register" start="43" end="43" startBytecode="18" endBytecode="18" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+  </BugInstance>
+  <BugInstance type="QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT" priority="1" rank="5" abbrev="QBA" category="CORRECTNESS" first="22">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.Register" name="IndividualValidation" signature="()V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.Register" start="44" end="50" startBytecode="0" endBytecode="98" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.Register" start="45" end="45" startBytecode="5" endBytecode="5" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="23" last="31" removedByChange="true">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Field classname="com.learnsecurity.Register" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Field>
+    <SourceLine classname="com.learnsecurity.Register" start="10" end="10" startBytecode="11" endBytecode="11" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="22">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Field classname="com.learnsecurity.Register" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Register" start="12" end="12" startBytecode="0" endBytecode="0" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="35">
+    <Class classname="com.learnsecurity.Register">
+      <SourceLine classname="com.learnsecurity.Register" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Class>
+    <Field classname="com.learnsecurity.Register" name="typeOfUser" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.learnsecurity.Register" start="10" end="10" startBytecode="0" endBytecode="0" sourcefile="Register.java" sourcepath="com/learnsecurity/Register.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS" priority="2" rank="16" abbrev="BC" category="BAD_PRACTICE" first="15">
+    <Class classname="com.learnsecurity.RegisteredPerson">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="40" end="40" startBytecode="0" endBytecode="72" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="40" end="40" startBytecode="1" endBytecode="1" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="40" end="40" startBytecode="1" endBytecode="1" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+  </BugInstance>
+  <BugInstance type="BC_IMPOSSIBLE_CAST" priority="1" rank="9" abbrev="BC" category="CORRECTNESS" first="15">
+    <Class classname="com.learnsecurity.RegisteredPerson">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="invalidCast" signature="()V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="17" end="20" startBytecode="0" endBytecode="15" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Double;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Double"/>
+    </Type>
+    <Type descriptor="Ljava/lang/Long;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.Long"/>
+    </Type>
+    <LocalVariable name="doubleValue" register="0" pc="5" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="18" end="18" startBytecode="6" endBytecode="6" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+  </BugInstance>
+  <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="2" rank="16" abbrev="CNT" category="BAD_PRACTICE" first="15">
+    <Class classname="com.learnsecurity.RegisteredPerson">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="getPI" signature="()D" isStatic="true">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="27" end="27" startBytecode="0" endBytecode="35" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+    <String value="3.141"/>
+    <String value="Math.PI"/>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="27" end="27" startBytecode="0" endBytecode="0" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="27" end="27" startBytecode="0" endBytecode="0" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="15">
+    <Class classname="com.learnsecurity.RegisteredPerson">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="5" end="14" startBytecode="0" endBytecode="27" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+    <LocalVariable name="d" register="1" pc="41" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="12" end="12" startBytecode="40" endBytecode="40" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="12" end="12" startBytecode="40" endBytecode="40" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="d"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" first="15">
+    <Class classname="com.learnsecurity.RegisteredPerson">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="40" end="40" startBytecode="0" endBytecode="72" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="15">
+    <Class classname="com.learnsecurity.RegisteredPerson">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="booleanMethodReturnNull" signature="()Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="23" end="23" startBytecode="0" endBytecode="33" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="23" end="23" startBytecode="1" endBytecode="1" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="23" end="23" startBytecode="1" endBytecode="1" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="15">
+    <Class classname="com.learnsecurity.RegisteredPerson">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="5" end="14" startBytecode="0" endBytecode="149" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="stringConcat" signature="([Ljava/lang/String;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="31" end="35" startBytecode="0" endBytecode="133" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="13" end="13" startBytecode="55" endBytecode="55" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="13" end="13" startBytecode="55" endBytecode="55" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="15">
+    <Class classname="com.learnsecurity.RegisteredPerson">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.RegisteredPerson" name="stringConcat" signature="([Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.learnsecurity.RegisteredPerson" start="31" end="35" startBytecode="0" endBytecode="133" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.RegisteredPerson" start="33" end="33" startBytecode="8" endBytecode="8" sourcefile="RegisteredPerson.java" sourcepath="com/learnsecurity/RegisteredPerson.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="48" end="83" startBytecode="0" endBytecode="324" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="49" end="49" startBytecode="12" endBytecode="12" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="49" end="49" startBytecode="12" endBytecode="12" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="48" end="83" startBytecode="0" endBytecode="324" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="53" end="53" startBytecode="27" endBytecode="27" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="53" end="53" startBytecode="27" endBytecode="27" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="320" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="103" end="103" startBytecode="47" endBytecode="47" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="103" end="103" startBytecode="47" endBytecode="47" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" first="1">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="48" end="83" startBytecode="0" endBytecode="324" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <LocalVariable name="request" register="4" pc="49" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="63" end="63" startBytecode="51" endBytecode="51" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="63" end="63" startBytecode="51" endBytecode="51" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="320" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Class classname="java.io.Reader" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Reader"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="103" end="103" startBytecode="47" endBytecode="47" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="104" end="104" startBytecode="51" endBytecode="51" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="105" end="105" startBytecode="57" endBytecode="57" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="116" end="116" startBytecode="69" endBytecode="69" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="117" end="117" startBytecode="75" endBytecode="75" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="121" end="121" startBytecode="99" endBytecode="99" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="122" end="122" startBytecode="108" endBytecode="108" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Reader x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="56" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader"/>
+    </Type>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="103" end="103" startBytecode="42" endBytecode="42" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="103" end="103" startBytecode="42" endBytecode="42" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="com.learnsecurity.SimpleWebServer">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Class>
+    <Method classname="com.learnsecurity.SimpleWebServer" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" start="28" end="30" startBytecode="0" endBytecode="67" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Method>
+    <Field classname="com.learnsecurity.SimpleWebServer" name="dServerSocket" signature="Ljava/net/ServerSocket;" isStatic="true">
+      <SourceLine classname="com.learnsecurity.SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    </Field>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="29" end="29" startBytecode="14" endBytecode="14" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+    <SourceLine classname="com.learnsecurity.SimpleWebServer" start="29" end="29" startBytecode="14" endBytecode="14" sourcefile="SimpleWebServer.java" sourcepath="com/learnsecurity/SimpleWebServer.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 26 Apr 2020 12:20:38 -0500" total_classes="1" referenced_classes="13" total_bugs="28" total_size="32" num_packages="1" java_version="1.8.0_251" vm_version="25.251-b08" cpu_seconds="9.66" clock_seconds="126.56" peak_mbytes="1030.95" alloc_mbytes="1024.00" gc_seconds="0.16" priority_2="18" priority_1="10">
+    <PackageStats package="com.learnsecurity" total_bugs="28" total_types="7" total_size="32" priority_2="18" priority_1="10">
+      <ClassStats class="com.learnsecurity.Register" sourceFile="Register.java" interface="false" size="32" bugs="4" priority_2="3" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="627" invocations="350" avgMicrosecondsPerInvocation="1791" maxMicrosecondsPerInvocation="171449" standardDeviationMicrosecondsPerInvocation="9531"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="440" invocations="2" avgMicrosecondsPerInvocation="220319" maxMicrosecondsPerInvocation="384476" standardDeviationMicrosecondsPerInvocation="164156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="152" invocations="351" avgMicrosecondsPerInvocation="433" maxMicrosecondsPerInvocation="5915" standardDeviationMicrosecondsPerInvocation="515"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1587429245817" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1587429245823" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1587433730179" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1587441855173" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1587441952536" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1587442258950" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1587442339130" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1587442477755" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1587442539688" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1587442629178" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1587442669546" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1587442890962" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1587443022462" release="" codeSize="76" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1587443183861" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1587444422371" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1587444726991" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1587445785573" release="" codeSize="5" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1587445834882" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1587499438058" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1587507945893" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1587508046458" release="" codeSize="203" numClasses="6"/>
+    <AppVersion sequence="21" timestamp="1587508328431" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1587860396049" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1587862143139" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1587862880258" release="" codeSize="60" numClasses="2"/>
+    <AppVersion sequence="25" timestamp="1587863092230" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1587863291473" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1587863898452" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1587864009314" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1587864072307" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1587864609111" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1587864715469" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1587864834895" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1587865424689" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1587865657290" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1587865741236" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1587866291847" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1587918430948" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1587921062210" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1587935209955" release="" codeSize="32" numClasses="1"/>
+  </History>
+</BugCollection>
