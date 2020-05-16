@@ -1,0 +1,23 @@
+** THE PDF YOUR PARENTS WARNED YOU ABOUT II **
+
+Another email in your inbox.
+Doesn't seem overly suspicious.
+Only looks like a PDF of the most recent public earnings release.
+But the source doesn't seem familiar.
+Enterprise defenses may have missed something.
+
+The PDF does seem a bit posh.
+That should help us gin up the flag.
+That key should be around here somewhere...
+
+** --- update 20181017 6:56pm ---
+
+Can't seem to find the key?
+Look at the first thing that comes to mind.
+U aren't alone.
+Everyone seems to miss finding this in the challenge text
+
+However,
+All things being equal,
+Certain things don’t belong,
+Knowing this, good luck!

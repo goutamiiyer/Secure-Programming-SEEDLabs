@@ -1,0 +1,1 @@
+Decrypt the following flag: synt{onpxbss_znyjner}

@@ -1,0 +1,3 @@
+DASH DOT COM
+
+Find the flag hidden in this Apache access log.

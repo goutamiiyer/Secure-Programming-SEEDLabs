@@ -1,0 +1,3 @@
+ROCK SCISSORS PAPER LIZARD SPOCK
+
+Beat the game to win a flag!

@@ -1,0 +1,3 @@
+MODICON-HTTP
+
+What is the HTTP Basic Authorization password used in the failed USER login?

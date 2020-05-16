@@ -1,0 +1,3586 @@
+
+
+/* NOTE: ABOVE WERE PURCHASED FOR ABC - WE MUST PURCHASE FONTS FOR LOCKHEED IF WE WANT TO USE THEM */
+
+@media screen, print {
+    /**
+    * @section  YUI Reset;
+    * @note uncompressed available at ./uncompressed/reset.css;
+    **/
+    html{color:#000;background:#0F6EB1;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+    
+    
+    /**
+    * @section  960 grid; 12+16 column; 5px margin;
+    * @note uncompressed available at ./uncompressed/960margin5.css;
+    **/
+    .container_12,.container_16{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,.grid_13,.grid_14,.grid_15,.grid_16{display:inline;float:left;margin-left:5px;margin-right:5px}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1 {width:70px}.container_12 .grid_2 {width:150px}.container_12 .grid_3 {width:230px}.container_12 .grid_4 {width:310px}.container_12 .grid_5 {width:390px}.container_12 .grid_6 {width:470px}.container_12 .grid_7 {width:550px}.container_12 .grid_8 {width:630px}.container_12 .grid_9 {width:710px}.container_12 .grid_10{width:790px}.container_12 .grid_11{width:870px}.container_12 .grid_12{width:950px}.container_12 .prefix_1 {padding-left:80px}.container_12 .prefix_2 {padding-left:160px}.container_12 .prefix_3 {padding-left:240px}.container_12 .prefix_4 {padding-left:320px}.container_12 .prefix_5 {padding-left:400px}.container_12 .prefix_6 {padding-left:480px}.container_12 .prefix_7 {padding-left:560px}.container_12 .prefix_8 {padding-left:640px}.container_12 .prefix_9 {padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1 {padding-right:80px}.container_12 .suffix_2 {padding-right:160px}.container_12 .suffix_3 {padding-right:240px}.container_12 .suffix_4 {padding-right:320px}.container_12 .suffix_5 {padding-right:400px}.container_12 .suffix_6 {padding-right:480px}.container_12 .suffix_7 {padding-right:560px}.container_12 .suffix_8 {padding-right:640px}.container_12 .suffix_9 {padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_16 .grid_1 {width:50px}.container_16 .grid_2 {width:110px}.container_16 .grid_3 {width:170px}.container_16 .grid_4 {width:230px}.container_16 .grid_5 {width:290px}.container_16 .grid_6 {width:350px}.container_16 .grid_7 {width:410px}.container_16 .grid_8 {width:470px}.container_16 .grid_9 {width:530px}.container_16 .grid_10{width:590px}.container_16 .grid_11{width:650px}.container_16 .grid_12{width:710px}.container_16 .grid_13{width:770px}.container_16 .grid_14{width:830px}.container_16 .grid_15{width:890px}.container_16 .grid_16{width:950px}.container_16 .prefix_1 {padding-left:60px}.container_16 .prefix_2 {padding-left:120px}.container_16 .prefix_3 {padding-left:180px}.container_16 .prefix_4 {padding-left:240px}.container_16 .prefix_5 {padding-left:300px}.container_16 .prefix_6 {padding-left:360px}.container_16 .prefix_7 {padding-left:420px}.container_16 .prefix_8 {padding-left:480px}.container_16 .prefix_9 {padding-left:540px}.container_16 .prefix_10{padding-left:600px}.container_16 .prefix_11{padding-left:660px}.container_16 .prefix_12{padding-left:720px}.container_16 .prefix_13{padding-left:780px}.container_16 .prefix_14{padding-left:840px}.container_16 .prefix_15{padding-left:900px}.container_16 .suffix_1 {padding-right:60px}.container_16 .suffix_2 {padding-right:120px}.container_16 .suffix_3 {padding-right:180px}.container_16 .suffix_4 {padding-right:240px}.container_16 .suffix_5 {padding-right:300px}.container_16 .suffix_6 {padding-right:360px}.container_16 .suffix_7 {padding-right:420px}.container_16 .suffix_8 {padding-right:480px}.container_16 .suffix_9 {padding-right:540px}.container_16 .suffix_10{padding-right:600px}.container_16 .suffix_11{padding-right:660px}.container_16 .suffix_12{padding-right:720px}.container_16 .suffix_13{padding-right:780px}.container_16 .suffix_14{padding-right:840px}.container_16 .suffix_15{padding-right:900px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}
+    
+    
+    /**
+    * @note this holds styles for layout and site design;
+    *         uncompressed available at ./uncompressed/sample.css;
+    * @author   NavigationArts; navigationarts.com;
+    * @note put IE6/7 hacks inline;
+    *         background: blue;  -all;
+    *        *background: red;   -IE6+7;
+    *        _background: green; -IE6;
+    **/
+
+
+    /**
+    * @section  Tags;
+    * @note ordered alphabetically;
+    **/
+    a {
+        cursor:pointer;
+        text-decoration: none;
+    }
+        a:link {}
+        a:visited {}
+        a:hover {
+            color: #696a6c;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        a:active {}
+        a:focus {}
+        a img {
+            /* @note  fixes a white space bug when an A wraps around the image; */
+            /* vertical-align: bottom; */
+        }
+    abbr {}
+    acronym {}
+    address {}
+    area {}
+    b {}
+    base {}
+    bdo {}
+    big {}
+    blockquote {}
+    body {
+        background:url(clientlibs_newUS/us/refresh/bodyBG_2.png) 0 0 repeat-x #FFFFFF;
+        font-family: sans-serif;
+    }
+    br {}
+    button {}
+    caption {}
+    cite {}
+    code {}
+    col {} 
+    colgroup {}
+    dd {}
+    del {}
+    dfn {}
+    div {}
+    dl {}
+    dt {}
+    em {}
+    fieldset {}
+    font {}
+    form {}
+    frame {}
+    frameset {}
+    head {}
+    h1 {
+        color: #084690;
+        font: normal 30px/30px DINWeb-Medium, sans-serif;
+        padding:10px 0 15px;
+    }
+    h2 {
+        color:#494949;
+        font: bold 18px/16px DINWeb-Medium, sans-serif;
+    }
+    h3 {
+        color: #494949;
+        font: bold 12px/16px DINWeb-Medium, sans-serif;
+    }
+        h3 a {
+            color: #074087;
+            /* Removed by request. See also div.rteText h3 a MDS-QI 2011-11-23
+            font-size: 10px;
+            font-weight: normal;
+            text-transform: uppercase;
+            */
+        }
+    h4 {}
+    h5 {}
+    h6 {}
+    hr {}
+    html {
+    }
+    i {}
+    iframe {}
+    img {}
+    input {}
+        input[type="button"] {
+            cursor: pointer;
+        }
+    ins {}
+    kbd {}
+    label {}
+    legend {}
+    li {
+        color: #696a6c;
+        font: 12px/16px sans-serif;
+    }
+    link {}
+    map {}
+    meta {}
+    noframes {}
+    noscript {}
+    object {}
+    ol {}
+    optgroup {}
+    option {}
+    p {
+        color: #696a6c;
+        font: 12px/16px sans-serif;
+        padding: 10px 0;
+    }
+    param {}
+    pre {}
+    q {
+        quotes: '\201C' '\201D' '\2018' '\2019';
+    }
+        q:before {
+            content: open-quote;
+        }
+        q:after {
+            content: close-quote;
+        }
+    samp {}
+    select {}
+/*   small {}  */
+    span {}
+    strong {}
+    style {}
+    sub {}
+    sup {}
+    table {}
+    tbody {}
+    td {}
+    textarea {}
+    tfoot {}
+    th {}
+    thead {}
+    title {}
+    tr {}
+    tt {}
+    ul {}
+    var {}
+    u {}
+    
+    /* page-type specific styling */           
+    body.home {
+        background:url('clientlibs_newUS/us/refresh/contentBG-Home_4.png') 0 0 repeat-x #fff;
+    }
+        body.home div#container {
+            background-color: transparent;
+
+
+        }
+        body.home #navMain {
+            position: relative;
+            top: 5px;
+            *height: 40px; 
+        }
+        /*DAS - removed z-index so footer social links work  */
+        body.home #content {
+            margin-top: -4px;
+            padding-bottom: 0;
+            padding-top:0;
+            background:none;
+            position: relative;
+            top: 80px;
+            /*z-index:100;*/
+        }
+        body.home #footer {
+            border:none;
+            position: absolute;
+
+
+            top: 981px;
+            *top:981px;
+            width: 100%;
+            z-index: 99;
+        }
+            body.home #footer div {
+                background: none;
+                *height: 100px;
+            }
+                body.home #footer div ul {
+                    *margin-top: 40px;
+					padding-left:70px;
+                }
+        body.home div.centerCol {
+            margin: 0 17px;
+            _margin: 0 10px;
+            width: 439px;
+        }
+        body.home div.centerColFull {
+            margin: 0 17px;
+            _margin: 0 10px;
+            width: 439px;
+        }       
+        body.home div.moduleBody h1 {
+            color: white;
+        }
+        body.home div.moduleBody h4 {
+            color:white;
+        }
+            body.home div.centerCol h1,
+            body.home div.centerColFull h1,
+			body.home div.centerColWhole h1{
+                font: 14px/16px DINWeb-Medium, sans-serif;
+                padding-top: 0;
+                text-transform: uppercase;
+            }
+            
+            body.home div.centerCol h2,
+            body.home div.centerColFull h2 ,
+			body.home div.centerColWhole h2  {
+                margin-top: 10px;
+            }
+            body.home div.centerCol h3 a,
+            body.home div.centerColFull h3 a,
+			body.home div.centerColWhole h3 a
+            {
+                line-height: 50px;
+            }
+        body.home div.mainContent{
+            float: left;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: -50px;
+        }
+            body.home div.wide {
+                padding: 10px 0;
+                position: relative;
+                top: 15px;
+                z-index: 100;
+
+                *height: 395px;
+                *padding-bottom: 0px;
+            }
+                body.home div.wide h1, 
+                    body.home div#content div.rail h1 {
+                        color: #03254d;
+                        padding: 5px 0;
+                }
+                body.home div.wide h3 a {
+                    font-size:10px;
+                }
+
+
+                body.home div.wide div.rail {
+                    background:url(../lockheed/img/homeFeatureBG.png) repeat-x 0 0 transparent;
+                    border: 1px solid #dadada;
+
+                    height: 340px;
+                }
+                    body.home div.wide div div {
+                        background: none; /* fix, MDS of QI on 2011-12-02 */
+                        border:none;    
+
+
+
+
+                        height:320px;
+                        padding: 10px 15px;
+                    }
+                        body.home div.wide div div div {
+
+
+
+
+                            height:auto;
+                            padding:0;
+                        }
+                    
+            body.home div.wide div.rail {
+                padding: 0;
+                margin: 0;
+                width: 240px;
+                        box-shadow: 0px 17px 36px 0px rgba(0,0,0,0.75);
+                   -moz-box-shadow: 0px 17px 36px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 0px 17px 36px 0px rgba(0,0,0,0.75);     
+            }
+            /* features accordion */
+            body.home div.wide div.leftColumn div {
+                padding-left: 10px;
+            }
+                body.home #features {
+                    margin: 2px 0;
+                    overflow: hidden;
+                    padding: 0;
+                    width: 221px;
+                }
+                    body.home #features li {
+                        background: url(../lockheed/img/homeFeatureLI.png) repeat-x 0 0;
+                        border: none;
+                        padding: 4px 4px 1px 4px;
+                        width: 222px;
+                    }
+                            body.home #features p {
+                                color: #696a6c;
+                                font: normal 12px/14px Arial, sans-serif;
+                                width: inherit;
+                                margin-bottom: 0;
+                            }
+                            body.home #features li a {
+                                color: #074187;
+                                font: 12px/25px Arial,sans-serif;
+                                padding: 0px 15px;
+                                width: 185px;
+                                display: block;
+                            }
+                            body.home #features li a:hover {
+                                color: #696a6c;
+                            }
+                            body.home #features li a.opened {
+                                background: url(../lockheed/img/homeFeatureOpen.png) no-repeat 199px 10px;
+                            }
+                            body.home #features li a.closed {
+                                background: url(../lockheed/img/homeFeatureClosed.png) no-repeat 197px 7px;
+                            }
+                                body.home #features li h3 a {
+                                    font: 11px/12px DINWeb-Regular,Arial,sans-serif;
+                                    padding: 2px;
+                                }
+                                    body.home #features li h3 a:hover {
+                                        color: #696a6c;
+                                    }
+                                body.home #features ul {
+                                    margin: 0 -4px;
+                                    overflow: hidden;
+                                    padding: 0;
+                                }
+                                    body.home #features li li {
+                                        background: none;
+                                        border-left: 1px solid #E5E5E5;
+                                        border-right: 1px solid #E5E5E5;
+                                        height: 160px;
+                                        margin-left: 1px;
+                                        padding: 8px 4px 0;
+                                        width: 210px;
+                                    }
+                                        body.home #features li.last-child ul {
+                                            border-bottom:1px solid #E5E5E5;
+                                        }                   /************** end accordion *************/
+                body.home div.wide div.rightRail div div {
+                    /* border-top: 1px solid #DADADA; */ 
+                    margin-bottom: 5px;
+                   /*  padding-top: 10px; */
+                }
+                    body.home div.wide div.rightRail div div.top {
+                        border: none;
+                        padding-top: 0;
+                    }
+                    body.home div.wide div.rightRail div h3 {
+                        padding-top: 8px;
+                    }
+                    body.home div.wide div.rightRail div p {
+                        color: #b0b0b0;
+                        font-size: 10px;
+                        line-height: 14px;
+                        margin-bottom: 0;
+                        padding: 0;
+                        width: inherit;
+                    }
+                        body.home div.wide div.rightRail div p a {
+                            color: #494949;
+                            font-size: 12px;
+                        }
+                            body.home div.wide div.rightRail div p a:hover {
+                                color: #696a6c;
+                            }
+                    body.home div.wide div.rightRail img {
+                        float: left;
+                        padding: 5px 5px 5px 0;
+                    }
+    /* home page slideshow */
+        body.home #slideshowBackground {
+            height: 349px;
+            left: -145px;
+            position: absolute;
+            top: 140px;
+            width: 1250px;
+            z-index: 1;
+            *z-index: 0;
+        }
+        body.home div.moduleSlideshow {
+            background-color:transparent;
+        }
+            body.home div.moduleContent {
+
+                /*width: 360px; */ 
+    			min-width:250px;
+               background: none repeat scroll 0 0 rgba(0,0,0,0.4);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);   /* IE6 & 7 */
+                padding-left: 3000px;
+				margin-left: -3000px;
+    			padding-right: 50px;
+				height:135px;
+				margin-top:10px;
+    			/*padding-right:5px;*/
+    			/*overflow:hidden;*/
+            }
+                body.home div.moduleSlideshow h1 {
+                    padding-top: 5px;
+                }
+                    body.home div.moduleSlideshow h1 a {
+                        color: #FFFFFF;
+                        font: 60px/50px DINWeb-Medium, Arial, sans-serif;
+                    }
+                    body.home div.moduleSlideshow h1 a:hover {
+                        text-decoration: none;
+                    }
+                body.home div.moduleSlideshow h4 {
+                    color: #FFFFFF;
+                    font: 10px DINWeb-Medium, Arial, sans-serif;
+                    left: 75px;
+                    padding-top: 20px;
+                    position: relative;
+                    text-transform: uppercase;
+                }
+                body.home div.moduleSlideshow p {
+                    color: #FFFFFF;
+                    /*font: 24px/28px LMHome, DINWeb-Regular, Arial, sans-serif;*/
+
+
+    				font: 22px LMHome, DINWeb-Regular, Arial, sans-serif;
+					padding: 30px 0px 0px 0px;
+    				opacity:0.9; 
+                }
+                body.home div.moduleSlideshow h1 {
+                	/*font: 56px/42px LMHome,sans-serif;*/ 
+    				/*font: 50px/42px LMHome,sans-serif; */
+					font: 50px LMHome,sans-serif;
+                	margin-top:-5px;
+    				padding-bottom:30px;
+    				opacity:0.9;
+				}
+
+                body.home div.moduleSlideshow h3 {
+
+                	position:absolute;
+                	top:118px;
+                	left:270px;
+                    text-transform:uppercase;
+                    font: 12px/12px DINWeb-Medium,sans-serif;
+               		background: none repeat scroll 0 0 rgba(0,0,0,0.5);
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; /* IE8 */
+    				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);   /* IE6 & 7 */  
+    				padding:5px;
+    				/*width:80px;*/
+    				margin:10px;
+    				float:right;
+                }
+                body.home div.moduleSlideshow div.learnmore {
+                    text-transform:uppercase;
+                    font: 12px Arial,sans-serif;  
+               		background: none repeat scroll 0 0 rgba(15,110,177,1.0);
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; /* IE8 */
+    				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);   /* IE6 & 7 */  
+    				margin-top:8px;
+    				margin-right:-50px;
+    				float:right;
+    				/*padding: 2px 6px;*/
+    				padding: 4px 8px;
+					position:relative;
+					/*
+    				position:absolute;
+    				top: 100px;
+    				left:100px;
+    				*/
+
+                }
+                    body.home div.moduleSlideshow div.learnmore a {
+                        color: #FFFFFF;
+                    }
+                    body.home div.moduleSlideshow h3 a {
+                        color: #FFFFFF;
+                    }
+        /* the navigation */
+        body.home div.slideshowNav {
+
+            left: 20px;
+
+            padding: 10px 0;
+            position: absolute;
+
+
+            top: 150px;
+
+
+            z-index: 40;
+        }
+            body.home div.slideshowNav div { display: inline; }
+                body.home div.slideshowNav a {
+                    margin: 20px 5px 5px 5px;
+
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    font: 14px Arial, sans-serif;
+               	background: none repeat scroll 0 0 rgba(0,0,0,0.3);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; /* IE8 */
+    			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);   /* IE6 & 7 */  
+    			/*padding:2px 5px;*/
+    			padding:4px 7px;
+                }
+                    body.home div.slideshowNav a.slideshowHighlight { 
+
+                            background: #0F6EB1;
+                            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0F6EB1,endColorstr=#FF0F6EB1)"; /* IE8 */    
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0F6EB1,endColorstr=#FF0F6EB1);   /* IE6 & 7 */
+                    }
+            
+    body.landing  {}
+        body.landing div.middleRow {
+            display: block;
+        }
+    
+    body.multimedia div.upperFeature h2 {
+        color: #555555;
+        margin-bottom: 20px;
+    }
+    
+    body.trade {}
+        body.trade div.upperFeature {
+            border-bottom: 1px solid #E6E7E7;
+            height: 325px;
+            width: 690px;
+            margin-bottom: 10px; /* Trade show fix, MDS of QI on 2011-12-01 */
+        }
+            div.upperFeature div.galleryRelated {
+                height: 300px;
+                left: 720px;
+                position: absolute;
+                top: 115px;
+                *top: 105px;
+                width: 180px;
+            }       
+                div.upperFeature div.galleryRelated h1,
+                    div.upperFeature div.galleryRelated h1 a {
+                    color: #555555;
+                    font: bold 18px/20px Arial, sans-serif;
+                }
+                div.upperFeature div.galleryRelated p {
+                    color: #696a6c;
+                    font: 12px/16px Arial, sans-serif;
+                }
+                    div.upperFeature div.galleryRelated div p {
+                        color: #555555;
+                        /* DAS - commented out */
+                        /*font: bold 12px/15px Arial, sans-serif;*/
+                        padding: 5px 0;
+                    }
+                    div.upperFeature div.galleryRelated div p a {
+                        color: #074289;
+                    }
+                    
+        /* when the container can be a 'link', need to provide the user some feedback on that; */
+            div.clickable {
+                cursor: pointer;
+            }
+            
+            /* contains the slides wrapper and the nav */
+            body.trade div.carouselContainer {
+                background: #fff;
+                width: 460px;
+                height: 300px;
+                overflow: hidden;
+                position: relative;
+            }
+                /* only want these styles with JS enabled; */
+                body.trade div.carouselContainer div.carouselGallery {
+                    background: transparent;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50px;
+                    width: 360px;
+                    height: 50px;
+                    z-index: 11;
+                }
+            
+            /* wrapper that contains the slides */
+            body.trade div.carouselGallery {
+                position: relative;
+                background: #fff;
+                width: 460px;
+                height: 300px;
+            }
+                /* wrapper that contains the modules */
+               body.trade div.carouselGallery div.carouselSlide {
+                    position: absolute;
+                    /* DAS - removed for formatting
+                    bottom: 10px;
+                    */
+                    left: 50px;
+                    height: 50px;
+                    *padding: 0 5px;
+                    _padding: 0;
+                    width: 360px;
+                }
+            
+            /* the slide module */
+           body.trade div.moduleCarousel {
+                float: left;
+                height: 50px;
+                width: 80px;
+                margin: 0 5px;
+                *margin: 0 3px;
+                padding: 0;
+            }
+               body.trade div.moduleCarousel img {
+                    border: 0;
+                    height: 50px;
+                    *padding: 0 1px;
+                    width: 80px;
+                }
+            
+            /* the navigation */
+            body.trade div.carouselNav {
+                position: absolute;
+                bottom: 0;
+                width: 460px;
+                height: 70px;
+                background: #000;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+                body.trade div.carouselNav a {
+                    position: absolute;
+                    width: 17px;
+                    height: 22px;
+                    cursor: pointer;
+                    z-index: 10;
+                }
+                    body.trade div.carouselNav a.carouselNavPrev {
+                        bottom: 24px;
+                        left: 19px;
+                        background: url(../lockheed/img/bgArrowLeft.png) no-repeat;
+                    }
+                    body.trade div.carouselNav a.carouselNavNext {
+                        bottom: 24px;
+                        right: 19px;
+                        background: url(../lockheed/img/bgArrowRight.png) no-repeat;
+                    }
+                    body.trade div.carouselNav a.carouselHighlight { 
+                        font-weight: bold;
+                        color: red;
+                        text-decoration: underline;
+                    }
+                body.trade div.carouselNav div {}
+                    body.trade div.carouselNav div.carouselNavPager {
+                        text-align: center;
+                        display: inline-block;
+                    }
+/**
+IE formatting to address opacity in galleries with carousel nav
+**/
+    body.trident div.upperFeature div.carouselNav, 
+        body.trident div.carouselGallery div.carouselSlide,
+            body.trident div.tabs div.carouselNav,
+                body.trident div.tabs div.carouselSlide,
+                    body.trident div.multimediaCarousel div.carouselSlide {
+        background: url(../lockheed/img/carouselNavOpacity.png) repeat-x 0 0;
+    }
+        body.trident div.tabs div.carouselSlide {width:362px; _width:370px;}
+            body.trident div.tabs div.carouselNav,
+                body.trident div.tabs div.videoGallery {
+                    *margin-bottom: 0;
+                }
+    /* ie */
+    body.trident div.wideRight div.title div.share, 
+        body.trident div.wideRight div.titleNoLine div.share,
+        body.trident div.fullRight div.title div.share,
+        body.trident div.fullRight div.titleNoLine div.share {
+            *margin-top: 0;
+            _margin-top:5px;
+            *clear: none;
+            _top: 50px;
+            _width: 315px;
+    }
+        body.trident  div.title div.share div.fb,
+            body.trident div.titleNoLine div.share div.fb {
+            background: url(../lockheed/img/titleLike.png) no-repeat 48px -14px;
+            *background: url(../lockheed/img/titleLike.png) no-repeat 50px 0;
+        }
+
+    body.trident.home div.wide div.rightRail div h3, 
+        body.windowsFirefox.home div.wide div.rightRail div h3 {
+        padding-top: 3px;
+        *padding-top: 8px;
+    }
+    
+    /**
+    * @section  Classes;
+    * @note ordered alphabetically; camelCase naming convention;
+    **/
+    
+    div {}
+    /* simple text content formatting */
+        div.article {
+            margin-top: 30px;
+        }
+            div.article ul {
+                margin: 10px 10px 20px 20px;
+                width:380px;
+            }
+            div.article ul li {
+                list-style: none;
+                background:url(../lockheed/img/bulletArticle.png) no-repeat 0 15px;
+                *background:url(../lockheed/img/bulletArticle.png) no-repeat 0 17px;
+                padding: 10px;
+            }
+
+    /* multiple pages */
+        div.breadcrumbs {
+            z-index:1;
+            left: 20px;
+            position: absolute;
+            top: 50px;
+            *width: 500px;
+        } 
+            div.breadcrumbs ul li {
+                float:left;
+                display:block;
+            }
+            div.breadcrumbs ul li:first-child,
+                div.breadcrumbs ul li.first-child {
+                background: none;
+                padding: 0;
+            }
+                div.breadcrumbs ul li:first-child a, 
+                    div.breadcrumbs ul li.first-child a {
+                    padding-left: 0;
+                }
+            div.breadcrumbs ul li {
+                background:url(../lockheed/img/breadcrumbDivider.png) no-repeat 0 10px;
+                padding: 0 10px;
+            }
+                div.breadcrumbs ul li a {
+                    color: #797878;
+                    font: 10px/15px DINWeb-Medium, sans-serif;
+                    padding: 0 10px 0 20px;
+                }
+                
+        /* center column of three-column layout */
+        div.centerCol {
+            display: inline;
+            float: left;
+            margin-right: 15px;
+            width: 460px;
+        }
+        div.centerColFull {
+            display: inline;
+            float: left;
+            margin-right: 15px;
+            width: 700px;
+
+        }      
+    	div.centerColWhole {
+    	background: url(http://www.mockheedmartin.com/content/dam/lockheed/data/corporate/photo/home/f16-40th-home.jpg) repeat:none 0 0;
+            display: inline;
+            float: left;
+            margin-right: 15px;
+            width: 700px;
+        } 		
+            div.centerCol a:hover,
+            div.centerColFull a:hover{ color: #696A6C; }
+
+        /* Capabilities page - floats two products with pics, title, and blurb */
+        div.featuredProducts {
+            margin-bottom: 20px;
+        }       
+            div.featuredProducts h1 {
+                color: #03254d;
+                font: 14px/55px DINWeb-Medium, sans-serif;
+                text-transform: uppercase;
+            }
+            div.featuredProducts h2 {
+                color: #696a6c;
+                font: bold 14px/15px Arial, Helvetica, sans-serif;
+            }
+            div.featuredProducts h3 {
+                font: 11px/15px DINWeb-Medium, sans-serif;
+                padding: 0 0 20px 0;
+            }
+            div.featuredProducts div.module {
+                float:left;
+                width: 230px;
+            }
+                #content div.featuredProducts div.module p {
+                    padding: 2px 0 15px;
+                    width:210px;
+                }
+                div.featuredProducts div.module img {
+                    margin-bottom: 15px;
+                }
+    /* multimedia page - galleries under tabbed menu */
+    body.multimedia div.mainContent div.tabs {
+        width: 680px;
+    }
+        body.multimedia div.mainContent div h2 {
+            background: #ffffff;
+            color: #03254d;
+            font: 14px/15px DINWeb-Medium, sans-serif;
+            padding-top: 20px;
+            text-transform: uppercase;
+        }
+        body.multimedia div.mainContent div.upperFeature h2 {
+            font: bold 18px/16px DINWeb-Regular, Arial, sans-serif;
+            padding-top: 0;
+            text-transform: none;
+        }
+            body.multimedia div.mainContent div.tabs div {
+                    padding: 20px 5px;
+            }
+                body.multimedia div.mainContent div.tabs ul.tabsNav {
+                    border-color: #CCCCCC #CCCCCC #BDBDBD;
+                    border-style: solid;
+                    border-width: 1px 1px 3px;
+                }
+                body.multimedia div.mainContent div.tabs div.mediaGallery {
+                    _margin: 0;
+                    _padding: 20px 0 20px 12px;
+                }
+                body.multimedia div.mainContent div.tabs div.mediaGallery div {
+                    border: none;
+                    float: left;
+                    height: 160px;
+                    margin: 5px 0 5px 7px;
+                    _margin: 5px 0 5px 5px;
+                    _padding-right: 0;
+                    width: 150px;
+                }
+                body.multimedia div.mainContent div.tabs div.mediaGallery div h2 {
+                    background-color: transparent;
+                    color: #696a6c;
+                    font: bold 12px/15px Arial, sans-serif;
+                    *margin-top: 55px;
+                    padding-top: 10px;
+                    padding-bottom: 0;
+                    text-transform: none;
+                }
+                body.multimedia div.mainContent div.tabs div.mediaGallery div p {
+                    font-weight: normal;
+                    padding: 0;
+                }
+                body.multimedia div.mainContent div.tabs div.mediaGallery div a img {
+                    vertical-align: inherit;
+                    _float: left;
+                    _padding-bottom: 10px;
+                }
+                
+                a.pop:hover h2, a.pop:hover p {
+                    text-decoration: underline;
+                }
+
+    /* landing page graphic menu - LM_WhatWeDo */
+        div.graphicMenu div {
+            float: left;
+            height: 175px;
+            width: 160px;
+            margin: 5px;
+        }
+            div.graphicMenu div h2 {
+                color: #696a6c;
+                font: bold 12px/15px sans-serif;
+                padding: 10px 10px 0 0;
+            }
+                div.graphicMenu div a:hover h2 {
+                    text-decoration: underline;
+                }
+            div.graphicMenu div img {
+                height: 95px;
+                width: 160px;
+            }
+        
+    /* .rail formats basic elements used in both the left and right rail, as the width and spacing are the same. In some instances, they are broken out into "rightRail" or "leftColumn", among other classes. */
+    div.rail {
+        color: #074087;
+        float: left;
+        margin-left:0;
+        padding-left:5px;
+        padding-top: 22px;
+        width: 165px;
+    }
+    
+        #content div.rail h1 {
+            font: 14px/16px DINWeb-Medium, sans-serif;
+            padding-top: 0;
+            text-transform: uppercase;
+        }
+            div#content div.rail h1 a {
+                color: #03254d;
+            }   
+      
+        div.rail h2 {
+            color: #4A4A4A;
+        }
+        div.rail p {
+            color:#929292;
+            margin-bottom:10px;
+            padding-top: 2px;
+            width: inherit;
+        }
+        
+    
+        div.rail ul {
+            padding-bottom: 10px;
+        }           
+            div.rail ul li {
+                border-top: none;
+                padding: 5px 0;
+            }
+                div.rail ul li a {
+                    color: #074187;
+                    font: 12px/16px Arial, sans-serif; /* Modified to address oddities on RightColumn lists. MDS-QI. 2011-11-23 */
+                }
+                div.leftColumn ul li a { /* All Rail lists had 25px line-height; added to limit it to leftColumn. MDS/QI. 2011-11-23 */
+                    font: 12px/25px Arial, sans-serif;
+                }
+                    div.rail ul li a.active {
+                        color: #606060;
+                        font-weight: bol d;
+                    }
+              
+    div.rail div.module {
+        padding: 35px 15px 25px;
+    }
+    
+    /* spotlight and empSpotlight blocks share some formatting - where shared, they are written together under empSpotlight */
+        div.rail div.empSpotlight {
+            border-top: 1px solid #e7e7e7;
+            padding-top: 20px;
+        }
+            div#content div.spotlight h2,
+                div.rail div.empSpotlight h2 {
+                color: #696a6c;
+                font: bold 14px/15px Arial, sans-serif;
+                margin-top: 10px;
+            }
+            div#content div.spotlight p, 
+                div.rail div.empSpotlight p {
+                color: #696a6c;
+                margin-bottom: 2px;
+                width: inherit;
+            }
+            
+        div.rail div.related {
+            border-top: 1px solid #e7e7e7;
+        }
+            div.rail div.related ul li {
+              /* DAS - changed line height to 1 from 0 */
+                line-height:1;
+                margin: 5px auto;
+            }
+            
+            div.rail div.related ul li a{
+                line-height: 14px;
+            }
+            div.rail div.related h3 {
+                padding-top: 10px;
+            }
+        
+    div.rail div.related2 {
+        padding: 0;
+    }
+    
+        div.rail div.related2 ul li {
+            border-top: 1px solid #e7e7e7;
+        }
+            div.rail div.related2 ul li:first-child {
+                border: none;
+            }
+                div.rail div li a:hover {
+                    color: #696a6c;
+                }
+            
+/* spotlight and empSpotlight blocks share some formatting - where shared, they are written together under empSpotlight */
+    div.rail div.spotlight {
+        background:#f1f1f1;
+        height: 280px;
+        padding:10px;
+        width:200px;
+    }
+        div#content div.spotlight h3 a {
+            color: #174d8e;
+        }
+            div#content div.spotlight h3 a:hover {
+                color: #696A6C;
+            }
+                                
+/* News and Events page */
+    div.rail div.featuredEvent {/*position is everything - has to be below div.module above*/
+            box-shadow: 0px 0px 14px #dadada;
+       -moz-box-shadow: 0px 0px 14px #dadada;
+    -webkit-box-shadow: 0px 0px 14px #dadada;
+        border: 1px solid #dadada;
+        height: 280px;
+        left: -10px;
+        padding: 22px;
+        position: relative;
+    }
+        div.rail div.featuredEvent img {
+            padding-top: 20px;
+        }
+        
+    /* multiple pages */        
+    div.leftColumn {
+        width: 230px;
+    }
+        div.leftColumn ul li {
+            border-top: 1px solid #E7E7E7;
+        }
+            div.leftColumn ul li:first-child {
+                border-top:none;
+            }
+                div.leftColumn div:first-child {
+                    padding-top:0;
+                }
+            
+            div.leftColumn ul div ul {
+                padding-bottom: 0;
+            }
+                div.leftColumn ul div li {
+                    border: none;
+                    margin-left: 20px;
+                    padding: 2px 0;
+                }
+                    div.leftColumn ul div li a {
+                        line-height: 15px;
+                    }
+
+        div.mainContent {
+            clear:both;
+            margin-top:5px;
+        }
+        /* tabs */
+        .mainContent div.tabs {
+            background-color: #f1f1f1;
+            *background-color: #FFFFFF;
+            margin: 20px 0 0 0;
+            border-color: #CCCCCC;
+            border-style: solid;
+            border-width: 0 1px 1px;
+        }
+        .mainContent div.tabs div {
+            border-width: 0 1px 1px;
+            padding: 20px;
+            *padding-bottom: 10px;
+            *margin-bottom: 20px;
+        }
+            body.detail div.mainContent div.tabs div.article {
+                background-color: #fff;
+                margin-top: 0;
+                padding: 25px 15px 15px;
+            }
+    /* contains video gallery on capabilities detail page*/
+    body.detail .mainContent div.tabs div#tabs-2, body.detail .mainContent div.tabs div#tabs-2 div,
+    body.detail .mainContent div.tabs div#tabs-3, body.detail .mainContent div.tabs div#tabs-3 div {
+        padding: 0;
+    }
+        body.detail .mainContent div.tabs div#tabs-2,
+            body.detail .mainContent div.tabs div#tabs-3  {
+            height: 100%;
+            padding: 0;
+            *background-color: #F1F1F1;
+        }
+        body.detail .mainContent div.tabs div#tabs-2 div.carouselContainer, body.detail .mainContent div.tabs div#tabs-2 div.carouselNav,
+        body.detail .mainContent div.tabs div#tabs-3 div.carouselContainer, body.detail .mainContent div.tabs div#tabs-3 div.carouselNav  {
+            width: 458px;
+        }
+        
+    /* when the container can be a 'link', need to provide the user some feedback on that; */
+    div.clickable { 
+        cursor: pointer;
+    }
+    /* contains the slides wrapper and the nav */
+    body.detail div.carouselContainer {
+        background: #fff;
+        width: 460px;
+        height: 300px;
+        margin-bottom: 0;
+        overflow: hidden;
+        position: relative;
+    }
+        /* only want these styles with JS enabled; */
+        div.carouselContainer div.videoGallery {
+            background: transparent;
+            position: absolute;
+            bottom: 10px;
+            left: 50px; _left: 45px;
+            width: 360px; *width: 365px; _width: 370px;
+            height: 50px;
+            z-index: 11;
+        }
+    /* wrapper that contains the slides */
+    div.videoGallery {
+        position: relative;
+        background: #fff;
+        width: 460px;
+        height: 300px;
+    }
+        /* wrapper that contains the modules */
+        /* DAS - commented out bottom and left */
+        div.videoGallery div.carouselSlide {
+            position: absolute;
+            /*bottom: 10px;*/
+            /*left: 50px; 
+            _left: 45px; */
+            height: 50px;
+            width: 360px; *width: 365px; _width: 370px;
+        }
+    /* the slide module */
+    body.detail div.moduleCarousel {
+        float: left;
+        height: 50px;
+        width: 80px;
+        margin: 0 5px;
+        padding: 0;
+        *overflow: hidden;
+    }
+        body.detail div.moduleCarousel img {
+            border: 0;
+            height: 50px;
+            width: 80px;
+        }
+    /* the navigation */
+    body.detail div.carouselNav {
+        position: absolute;
+        bottom: 0;
+        width: 460px;
+        height: 70px;
+        background: #000;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+        body.detail div.carouselNav a {
+            position: absolute;
+            width: 17px;
+            height: 22px;
+            cursor: pointer;
+            z-index: 10;
+        }
+            body.detail div.carouselNav a.carouselNavPrev {
+                bottom: 24px;
+                left: 19px;
+                background: url(../lockheed/img/bgArrowLeft.png) no-repeat;
+            }
+            body.detail div.carouselNav a.carouselNavNext {
+                bottom: 24px;
+                right: 19px;
+                background: url(../lockheed/img/bgArrowRight.png) no-repeat;
+            }
+            body.detail div.carouselNav a.carouselHighlight { 
+                font-weight: bold;
+                color: red;
+                text-decoration: underline;
+            }
+        body.detail div.carouselNav div {}
+            body.detail div.carouselNav div.carouselNavPager {
+                text-align: center;
+                display: inline-block;
+            }
+    /* related video information */
+    body.detail div.mainContent div.tabs div#tabs-2 div.info,
+        body.detail div.mainContent div.tabs div#tabs-3 div.info {
+        padding: 25px 15px;
+    }
+        body.detail div.info h1 {
+            color: #494949;
+            font: 18px/15px DINWeb-Medium,sans-serif;
+            padding: 0;
+        }
+        body.detail div.info p {
+            color: #696a6c;
+            line-height: 15px;
+        }
+/* end video gallery */
+        
+        /* photo gallery */
+            /* capabilities detail page - galleries under tabbed menu */
+        body.detail div.mainContent div.tabs h2 {
+            background: #ffffff;
+            color: #03254d;
+            font: 14px/15px DINWeb-Medium, sans-serif;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+        }
+            body.detail div.mainContent div.tabs div {
+                    padding: 20px 5px;
+            }
+                body.detail div.mainContent div.tabs ul.tabsNav {
+                    border-color: #CCCCCC #CCCCCC #BDBDBD;
+                    border-style: solid;
+                    border-width: 1px 1px 3px;
+                }
+                body.detail div.mainContent div.tabs div.mediaGallery div {
+                    border: none;
+                    float: left;
+                    height: 160px;
+                    margin: 5px 7px;
+                    width: 125px;
+                }
+                body.detail div.mainContent div.tabs div.mediaGallery div h2 {
+                    background-color: transparent;
+                    color: #696a6c;
+                    font: bold 12px/15px Arial, sans-serif;
+                    padding-top: 10px;
+                    padding-bottom: 0;
+                    text-transform: none;
+                }
+                body.detail div.mainContent div.tabs div.mediaGallery div p {
+                    font-weight: normal;
+                    padding: 0;
+                }
+                body.detail div.mainContent div.tabs div.mediaGallery div a {
+                    text-decoration:none;
+                }
+                    body.detail div.mainContent div.tabs div.mediaGallery div a img {
+                        vertical-align: inherit;
+                    }
+        
+        .mainContent div.tabs ul.tabsNav {
+            margin: 0;
+            height: 37px;
+            border: 1px solid #ccc;
+            text-align: center;
+            background:url(../lockheed/img/tabsBG.png) repeat-x 0 0;
+        }
+        .mainContent div.tabs ul.tabsNav li {
+            background: url(../lockheed/img/tabsDivider.png) no-repeat 0 0;
+            margin: 0;
+            padding: 0;
+            display: block;
+            float: left;
+        }
+        .mainContent div.tabs ul.tabsNav a {
+            bottom: -1px;
+            color: #08458d;
+            font: 12px/22px Arial, sans-serif;
+            position: relative;
+        }
+        .mainContent div.tabs ul.tabsNav a:link, .mainContent div.tabs ul.tabsNav a:visited {
+            display: block;
+            float: left;
+            padding: 8px 15px;
+        }
+        .mainContent div.tabs ul.tabsNav a:link.active, .mainContent div.tabs ul.tabsNav a:visited.active {
+            background:url(../lockheed/img/tabsBGActive.png) repeat-x 0 0;
+            color: #494949;
+        }
+        .mainContent div.tabs ul.tabsNav a:hover {
+            background:url(../lockheed/img/tabsBGActive.png) repeat-x 0 0;
+            color: #696A6C;
+        }
+            
+        div.module {
+        }
+        
+    /* trade shows */
+        div.rail div.notes {
+            padding: 0 15px 15px;
+        }
+            div.notes h3 {
+                padding-bottom: 20px;
+            }
+            div.notes p {
+                color: #555555;
+                font: 12px/14px Arial, sans-serif;
+                width: auto;
+            }
+            div.notes a {
+                color: #174d8e;
+                font: 10px/15px DINWeb-Medium, sans-serif;
+            }
+            
+    /* MultiMedia page - pagination */
+        div.paging {
+            float:right;
+            margin-right: 30px;
+        }
+            div.paging p {
+                float: left;
+                margin-top: 28px;
+            }
+                div.paging p.prev {
+                    background: url(../lockheed/img/pagingPrevious.png) no-repeat 0 0;
+                }
+                div.paging p.next {
+                    background: url(../lockheed/img/pagingNext.png) no-repeat 0 0;
+                }
+            div.paging a {
+                color: #08458d;
+            }
+            div.paging ul {
+                float: left;
+            }
+                div.paging ul li {
+                    background:url(../lockheed/img/pagingDivider.png) no-repeat 0 33px;
+                    font-size: 20px;
+                    float:left;
+                    padding: 30px 10px;
+                }
+                div.paging ul li:first-child,
+                    div.paging ul li.first-child  {
+                    background: none;
+                }
+                    div.paging ul li a {
+                        font: 12px/22px Arial, sans-serif;
+                    }
+        
+    /* News and Events pages */
+        div.pressReleases {
+            background-color: #eeeeee;
+            height: 325px;
+            width: 410px;
+            padding: 0 20px;
+        }
+            #content div.pressReleases h1 {
+                color: #03254d;
+                font: 14px/35px DINWeb-Medium, sans-serif;
+                text-transform: uppercase;
+                padding-bottom:0;
+            }
+            div.pressReleases h3 {
+                line-height: 15px;
+                padding: 10px 0;
+            }
+            #content div.pressReleases p {
+                font: 10px/15px Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                width: 400px;
+            }
+                div.pressReleases p a {
+                    color: #08458f;
+                    font: 12px/15px Arial, Helvetica, sans-serif;
+                }
+            div.pressReleases div.module {
+                border-top: 1px solid #d7d8d8;
+                padding: 10px 0;
+            }
+            div.pressReleases div.first {
+                    border-top: none;
+                    padding-top: 0;
+                }
+                
+    
+    /* capabilities pages expand collapse form groupings; */
+        div.rail div.productFinder {
+            display: none; /* javascript used to show after rendered */
+            float: left;
+            margin: 0 0 10px 10px;
+            _margin-left: 5px;
+            padding: 0;
+            position: relative;
+            top: -11px;
+        }
+            div.rail div.productFinder h2 {
+                color: #074187;
+                font: 14px/38px DINWeb-Medium,sans-serif;
+                _line-height: 35px;
+                padding: 0 10px;
+            }
+            div.rail div.productFinder h4 a {
+                color: #074187;
+                font: 12px/34px Arial, sans-serif;
+                padding-left: 10px;
+            }
+                div.productFinder h2.toggle,
+                    div.productFinder h4.toggle {
+                        background:url(../lockheed/img/productFinderClosed.png) 0 0 no-repeat;
+                        border: none;
+                        cursor: pointer;
+                        height: 35px;
+                        width: 210px;
+                }
+                    div.productFinder h4.toggle:hover {
+                        background:url(../lockheed/img/productFinderClosedHover.png) 0 0 no-repeat;
+                    }                   
+                    div.productFinder h2.opened,
+                        div.productFinder h4.opened {
+                        background:url(../lockheed/img/productFinderOpen.png) 0 0 no-repeat;
+                    }
+                        div.rail div.productFinder h4.opened:hover {
+                            background:url(../lockheed/img/productFinderOpenHover.png) 0 0 no-repeat;
+                        }                   
+                                div.rail div.productFinder h4.opened {
+                                    background:url(../lockheed/img/productFinderLevel2-Open.png) 0 0 no-repeat;
+                                }
+                                    div.rail div.productFinder h2.opened a,
+                                        div.rail div.productFinder h2:hover,
+                                            div.rail div.productFinder h4.opened a,
+                                                div.rail div.productFinder h4:hover a {
+                                        color: #FFFFFF;
+                                    }
+            div.rail div.productFinder div div {
+                border: 1px solid #E7E7E7;
+                width: 208px;
+            }                                   
+                div.rail div.productFinder ul {
+                    padding-bottom: 0;
+                    width: 208px;
+                }
+                    div.rail div.productFinder div li {
+                        background: none;
+                        background-color: #F1F1F1;
+                        border: none;
+                    }
+                    /* DAS - for style update */
+div.rail div.productFinder div li a {
+    color: #074187;
+    display: block;
+    margin-left: 2em;
+    text-indent: -1em;
+} 
+                        
+            div.productFinder h2 a {
+                font: 14px/30px DINWeb-Medium, sans-serif;
+                padding: 10px;
+            }
+                div.productFinder li a {
+                    color: #074187;
+                    font: 12px/34px Arial,sans-serif;
+                    margin-left: 10px;
+                }
+                    /* Dennis Sanchez - removing spaces for 2nd level */
+                    div.productFinder ul li {
+                        padding: 0px;
+                    }                
+                    div.productFinder ul li a:hover {
+                        color: #074187;
+                    }
+                    div.productFinder h2:hover,
+                        div.productFinder h4:hover a {
+                        color: #FFFFFF;
+                    }
+                    
+            div.rail div.followsPF {
+                padding-top:0;
+            }       
+    /* trade shows */
+        /* Not sure why this is here, commented out by MDS of QI on 2011-12-01 */
+        /*div.productListing {
+            padding-left: 20px;
+        }*/
+            /*div.productListing div {
+                float: left;
+                width: 220px;
+            }*/
+            div.productListing h1 {
+                color: #03254D;
+                font: 14px/15px DINWeb-Medium, Arial, sans-serif;
+                text-transform: uppercase;
+            }           
+            div.productListing a {
+                color: #08458f;
+                font: 12px/30px Arial, sans-serif;
+            }
+            
+    /* multiple pages */
+        div.rightRail {
+            float: left;
+            padding-left: 0;
+            padding-top: 0;
+            width: 220px;
+        }
+            div.rightRail div.spotlight h3 a {
+                color: #FFFFFF;
+            }
+            
+            div.rightRail div.contacts {
+                    color: #555555;
+            }
+                div#content div.rightRail div.contacts h1 {
+                    padding-bottom: 0;
+                }
+                div.rightRail div.contacts h2 {
+                    font: bold 12px/14px Arial, sans-serif;
+                    margin-top: 12px;
+                }           
+                div.rightRail div.contacts p {
+                    font: normal 12px/14px Arial, sans-serif;
+                    margin: 0;
+                    padding: 1px 0;
+                }
+                div.rightRail div.contacts a {
+                    color: #074187;
+                }
+                    div.rightRail div a:hover {
+                        color: #696A6C;
+                    }
+        
+    /* Trade Shows page - schedule table */ 
+        div.schedule table {
+            margin: 0 0 50px;
+            width: 100%;
+        }
+            div.schedule table tr {
+                height: 50px;
+            }
+                div.schedule table tr th {
+                    height: 65px;
+                    padding-top: 15px;
+                }
+                    div.schedule table tr th p {
+                        color: #03254d;
+                        font: 14px/15px DINWeb-Medium, Arial, sans-serif;
+                        text-transform: uppercase;
+                    }
+                div.schedule table p {
+                    color: #696a6c;
+                    font: 10px/15px Arial, sans-serif;
+                    margin: 0;
+                    padding: 0 25px;
+                }
+                    div.schedule table p a {
+                        color: #08458f;
+                        font-size: 12px;
+                    }
+                    
+                div.schedule table tr.odd {
+                   background: #e6e7e7;
+                }
+        
+        /* find us / footer social media links */
+        div.leftColumn ul.socialLinks li {/* removes border for left column, formats menu */
+            border: none;
+            display: block;
+            float: left;
+            margin: 0 10px 5px 0;
+            padding: 0;
+        }
+            #footer div ul.socialLinks {
+                margin-top: 28px;
+            }
+                ul.socialLinks li a {
+                    display: block;
+
+
+                    height: 25px;
+                    margin: 5px 1px;
+                    overflow: hidden;
+                    padding:0;
+                    text-indent: -999em;
+
+                    width: 25px; 
+                }
+                    ul.socialLinks li a.fb {
+                        background: url(clientlibs_newUS/us/img/footer/icon-small-Facebook.png) no-repeat 0 0;
+                    }
+                    ul.socialLinks li a.fl {
+                        background: url(clientlibs_newUS/us/img/footer/icon-small-Flickr.png) no-repeat 0 0;
+                    }
+                    ul.socialLinks li a.yt {
+                        background: url(clientlibs_newUS/us/img/footer/icon-small-YouTube.png) no-repeat 0 0;
+                    }
+                    ul.socialLinks li a.tw {
+                        background: url(clientlibs_newUS/us/img/footer/icon-small-Twitter.png) no-repeat 0 0;
+                    }
+                    ul.socialLinks li a.gp {
+                        background: url(clientlibs_newUS/us/img/footer/icon-small-Google.png) no-repeat 0 0;
+                    }
+                    ul.socialLinks li a.ln {
+                        background: url(clientlibs_newUS/us/img/footer/icon-small-LinkedIn.png) no-repeat 0 0;
+                    }   
+                    ul.socialLinks li a.ig { 
+                        background: url(clientlibs_newUS/us/img/footer/icon-small-Instagram.png) no-repeat 0 0;
+                    }
+
+    /* multiple pages - formats page title and related social media links */
+        div.wideRight div.title {
+            border-bottom: 1px solid #E7E7E7;
+            margin-bottom: 20px;
+            width: 695px;
+        }
+        div.fullRight div.title {
+            border-bottom: 1px solid #E7E7E7;
+            margin-bottom: 20px;     
+        }
+        div.wideRight div.titleNoLine {
+            width: 699px;
+            margin-left: 5px;
+        }
+        div.fullRight div.titleNoLine {
+            margin-left: 20px;
+        }
+                
+        /*JEM added title_node definition to rule */
+            div.title h1, div.titleNoLine h1, div.wideRight div.title div.title_node {
+    			font: 35px/35px LMHome,DINWeb-Medium,sans-serif; 
+                float: left;
+                width: 395px;
+                _width: 390px;
+            }
+            div.title h2, div.titleNoLine h2 {
+                color: #555555;
+                font: 18px DINWeb-Regular, sans-serif;
+                margin: 15px 0;
+            }
+        
+            
+    /* title area social media links */
+    div.wideRight div.title div.share,
+        div.wideRight div.titleNoLine div.share,
+        div.fullRight div.title div.share, 
+        div.fullRight div.titleNoLine div.share {
+            clear: none;
+            position: absolute;
+            right: 20px;
+            top: 60px;
+            vertical-align: top; 
+
+            width: 243px;
+            zoom:1;
+            min-height:100px;
+            margin-top: 0px;            
+        }
+            div.wideRight div.titleNoLine div.share,
+            div.fullRight div.titleNoLine div.share { right: 30px; }
+                body.detail div.wideRight div.titleNoLine div.share,
+                body.detail div.fullRight div.titleNoLine div.share { right: 5px; }
+                
+        div.wideRight div.title div.share div,
+            div.wideRight div.titleNoLine div.share div,
+            div.fullRight div.title div.share div, 
+            div.fullRight div.titleNoLine div.share div{
+                display: inline;
+                /*position:absolute;*/
+                /* override for addthis, MDS of QI 2011-11-30 */
+                vertical-align: top;
+            }
+            div.title div.share input,
+                div.titleNoLine div.share input {
+                -moz-appearance: none;
+                vertical-align: top;
+
+            }
+
+                
+            div.title div, div.titleNoLine div {
+                clear: left;
+                margin-bottom: 10px;
+                width: 500px; 
+            }
+                /* DAS - fixed width so it wraps */
+                div.wideRight div.title div, div.wideRight div.titleNoLine div {
+                    width: 400px;
+                }
+                 div.fullRight div.title div, div.fullRight div.titleNoLine div {
+                    width: 600px;
+                }           
+            div.title div select.styled, div.titleNoLine div select.styled {
+                height: 30px;
+                width: 200px;
+            }
+                    .customStyleSelectBoxInner {
+                        background: url(../lockheed/img/topicsDropDownArrow.png) no-repeat scroll right center transparent;
+                        border: 2px solid #CCCECF;
+                        color: #797878;
+                        font: normal 14px/15px DINWeb-Medium, Arial, sans-serif;
+                        padding: 5px;
+                        width: 180px;
+                    }
+                div.title div.narrow input, div.titleNoLine div.narrow input {
+                        border: 2px solid #CCCECF;
+                        color: #797878;
+                        font: normal 14px/15px DINWeb-Medium, Arial, sans-serif;
+                        margin-left: 20px;
+                        padding: 4px;
+                        width: 190px;
+                }
+                div.title div.narrow input.searchButton, 
+                    div.titleNoLine div.narrow input.searchButton {
+                    border: none;
+                    margin-left: 0;
+                    margin-top:1px;
+                }
+                
+                
+/* video in rail */
+
+   div.rail div.videoSpotlight {
+        background-color: #254264;
+        padding-top:15px;
+        padding-bottom:25px;
+        width: 195px;
+    }
+       #content div.rail div.videoSpotlight h1 {
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            padding-bottom:5px;
+            padding-top: 5px;
+        }
+       div.rail div.videoSpotlight h2  {
+            color: #FFFFFF;
+            font: bold 14px/16px DINWeb-Medium, sans-serif;
+            margin-bottom: 2px;
+            margin-top: 15px;
+        }
+       div.rail div.videoSpotlight h3 a {
+            color: #FFFFFF;
+        }
+        div.rail div.videoSpotlight p {
+            color: #FFFFFF;
+            line-height: 15px;
+            margin-bottom: 15px;
+        }
+        div.rail div.videoSpotlight div.video {
+            background:url(../lockheed/img/fpo/195x110-FPO.png) 0 0 no-repeat;
+            height:110px;
+            width: 195px;
+        }
+            div.rail div.videoSpotlight div.video img {
+                padding:22px 0 0 60px;
+            }
+    
+    div.wideRight {
+        display: inline;
+        float: left;
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 710px;
+        _width: 705px;
+        *padding-bottom: 25px;
+    }
+    div.fullRight {
+        display: inline;
+        float: left;
+        margin-right: 5px;
+        margin-left: 20px;
+        /*width: 710px;
+        _width: 705px;
+        */
+        *padding-bottom: 25px;
+    }
+    
+    /**
+    * @section  IDs;
+    * @note ordered alphabetically; camelCase naming convention;
+    **/ 
+    #container {
+        background: url(../lockheed/img/contentTopBG.png) repeat-x 0 -2px #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 0;
+        width: 960px;
+    }
+    
+    #content {
+        /*background: url(../lockheed/img/contentBG_1.png) 0 0 repeat-x;*/
+        color: #929292;
+        margin-top: 21px;
+        padding-bottom: 20px;
+        padding-top:40px;    
+        position: relative;
+    	z-index:1;
+        *top: 20px;
+    }
+
+    #footer {
+    	/*background-color:#dad6d7;*/
+
+        background-color:#0f6eb1;
+
+        font: 12px/30px DINWeb-Regular, sans-serif;
+        *position:absolute;
+    }
+        
+        #footer div {
+            /*background:url(../lockheed/img/footerBG.png) repeat-x 0 0;*/
+            /*height: 145px; */
+            height: 100px;
+            margin: auto;
+            position: relative;
+            top: -1px;
+            width: 960px;
+            z-index: 20;
+        }
+        
+    #footer div ul:first-child,
+        #footer div ul.first-child  {/* floats text links menu left*/
+        float: left;
+    }
+        #footer div ul:first-child li,
+            #footer div ul.first-child li {
+            float: left;
+            /*background:url(../lockheed/img/footerDivider.png) no-repeat 0 0;*/
+            padding: 0 10px 0 20px;
+			color:white;
+        }
+            #footer div ul:first-child li:first-child,
+                #footer div ul.first-child li.first-child {
+                    background: none;
+                    padding-left: 0;
+					color:white;
+            }
+        
+    #footer div ul {/* floats social media links menu right */
+        float:right;
+        margin-top: 40px;
+    }
+        #footer div ul li {
+            float:left;
+            line-height: 19px;
+            padding: 5px;
+        }
+            
+            #footer div ul li a {
+
+				color:white;
+            }
+                #footer div ul:first-child li:first-child a,
+                    #footer div ul.first-child li.first-child a {
+
+                   font-weight: bold;
+                    color:white;
+                }
+    
+    #header {
+
+        height:119px;
+        position:relative;
+        z-index:100;
+    }
+        #header div {
+            width:960px;
+            margin: auto;
+    		position:relative;
+    		z-index:99;
+        }
+            #header div img {
+
+                padding: 16px 20px;
+    			position:relative;
+    			z-index:98;
+            }
+             #header div a {
+    			position:relative;
+    			z-index:97;
+             }
+
+
+        #header div.logo {
+            /*background: url(../lockheed/img/logo.png) no-repeat 0 30px;(*/
+            background-color:transparent;
+        }
+        
+    
+    #nav {
+        position: absolute;
+        top: 94px;
+        z-index:102;
+    }
+        div#nav ul li {
+            float: left;
+            display: block;
+            padding: 10px 0;
+        }
+        
+        div#navGlobal { 
+            font: 10px/30px DINWeb-Regular, sans-serif;
+            position: absolute;
+            top: -65px;
+             left: 600px;
+            width: 380px; 
+            /*
+            Adjustments for Centennial Logo
+            
+            width:600px;
+            left:400px;
+            */
+            vertical-align:middle;
+        } 
+            div#navGlobal ul li {
+                /*background:url(../lockheed/img/globalNavDivider.png) no-repeat 0 8px;*/
+                padding: 5px 15px;
+
+            }               
+                div#navGlobal ul li:first-child, div#navGlobal ul li.first-child {
+                    background: none;
+                }       
+                div#navGlobal ul li a {
+
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+                    div#navGlobal ul li a:hover {
+
+                       color: #FFFFFF;
+                    }
+        #navMain {
+            z-index:100;
+            color:#fff;
+            font: 14px DINWeb-Medium, sans-serif;
+            position: relative;
+            top: 5px;
+            width: 960px;
+        }
+            #navMain div {
+                background:url(clientlibs_newUS/us/refresh/mainNavBG_2.png) repeat-x 0 0;
+                height: 41px;
+                position: absolute;
+                top: 0;
+                
+            }
+                #navMain div li div {
+                    top: -10px;
+                }
+                #navMain div ul li {
+
+
+                    height: 20px;
+                    padding: 13px 0 8px;
+                    text-align: center;
+                    width: 125px;
+                }
+                    #navMain div ul li:last-child,
+                        #navMain div ul li.last-child {
+
+
+                            height: 20px;
+                            padding: 13px 0 8px;
+                            text-align: center;
+                            width: 124px;
+                        }
+                        #navMain div ul li li:last-child,
+                            #navMain div ul li li.last-child {
+                                height: 18px;
+                                text-align: center;
+                                width: 190px;
+                                padding: 10px 8px;
+                            }
+                    #navMain div ul li a {
+                        color: #FFF;
+                        font: 12px/16px DINWeb-Regular, Arial, sans-serif;
+                        text-transform: uppercase;
+                    }
+                        #navMain div ul li.active {
+                            background:url(../lockheed/img/mainNavActive.png) no-repeat 0 0;
+                        }
+                        #navMain div ul li:hover {
+                            background:url(../lockheed/img/mainNavHover-A1.png) repeat-x 0 0;
+                            cursor: pointer;
+                            z-index: 110;
+                            
+                        }           
+                            #navMain div ul li:hover a {
+                                color: #094fa3;
+                                text-decoration: none;
+                            }
+
+                    #navMain div ul li div {/* hides hover panel */
+                        display: none;
+                    }
+                        #navMain div ul li:hover div, 
+                            #navMain div ul li.hover div {
+                            background:url(../lockheed/img/mainNavHover-Div.png) no-repeat 0px 10px #FFFFFF;
+                                -moz-box-shadow: 0 2px 10px #c4c4c4;
+                            -webkit-box-shadow: 0 2px 10px #c4c4c4;
+                        box-shadow: 0 2px 10px #c4c4c4;
+                            cursor: pointer;
+                            display: block;
+                            height: 272px;
+                            left: 0;
+                            position: absolute;
+                            text-align: left;
+                            top: 41px;
+                            z-index: 1000;
+                        }
+                            /* DAS - menu background */
+                            #navMain div ul li.menu01:hover div {/* sets absolute positioning of panel menu per li */
+                                left: 0;
+                                width: 710px;
+                            }
+                                #navMain div ul li.menu01:hover div div {
+                                    width: 215px;
+                                }
+                            #navMain div ul li.menu02:hover div { 
+                                width: 500px;
+                            }
+                                #navMain div ul li.menu02:hover div div {/* sets relative positioning of elements within panel menu */
+                                    width: 215px;
+                                }
+                            /* DAS - changed width for one column - now changed to two columns*/    
+                            #navMain div ul li.menu03:hover div {
+                                left: 250px;
+                                width: 500px;  
+                            }
+                                #navMain div ul li.menu03:hover div div {
+                                    left: 0;
+                                    width: 215px;
+                                }
+                            #navMain div ul li.menu04:hover div {
+                            }
+                                #navMain div ul li.menu04:hover div div {
+                                    left: 0;
+                                }
+                            #navMain div ul li.menu05:hover div {
+                                /*left: 100px;*/
+                                width: 710px;
+                            }
+                                #navMain div ul li.menu05:hover div div {
+                                    left: 0px; 
+                                    width: 215px;
+                                }
+                                
+                                /* elements contained within panel menu */
+                                #navMain div li:hover div div {
+                                    background: none;
+                                        -moz-box-shadow: 0 0 0 #DADADA;
+                                    -webkit-box-shadow: 0 0 0 #DADADA;
+                                box-shadow: 0 0 0 #DADADA;
+                                    cursor: pointer;
+                                    display: block;
+                                    float: left;
+                                    padding: 0 10px;
+                                    position: relative;
+                                    top: 0;
+                                    width: 210px;
+                                    z-index: 1000;
+                                }
+                                    #navMain div li div div h1 {
+                                        color: #696a6c;
+                                        font: bold 14px/24px Arial, sans-serif;
+                                    }
+                                    #navMain div li div div p {
+                                        font: 12px/15px Arial, sans-serif;
+                                        width: 200px;
+                                    }
+                                    #navMain div li div div img {}
+                            
+                                    #navMain div li div div ul {/* panel menu menu items */
+                                        border-left: 1px solid #d8dada;
+                                        float: left;
+                                        margin-top: 10px;
+                                        padding-left: 3px;
+                                        width: 215px;
+                                    } 
+                                        #navMain div li div div ul.first {
+                                            border: none;
+                                            margin-left: -10px;
+                                        }
+                                        #navMain div li div div li,
+                                            #navMain div li div div li.last-child {
+                                            padding: 8px 8px 8px 20px;
+                                            width: 210px;
+                                        }
+                                        
+                                        #navMain div li div div li:first-child {
+                                            padding-top: 0;
+                                        }
+                                            #navMain div li:hover div div li a {
+                                                color: #074187;
+                                                cursor: pointer;
+                                                float: left;
+                                                padding-left: 0;
+                                                text-align: left;
+                                                text-transform:none;
+                                            }
+                                            #navMain div li div div li:hover {
+                                                background: none;
+                                            }
+                                            #navMain div li div div li a:hover {
+                                                color: #696a6c;
+                                                text-decoration: underline;
+                                            }
+            #navMain div.navSearch {
+                background: url("clientlibs_newUS/us/refresh/mainNavBG1.png") repeat-x scroll 0 0 transparent;
+                position: absolute;
+                right: 0;
+                text-align: right;
+                width: 337px;
+            }
+                #navMain div.navSearch .search{
+                    padding-top:5px;
+    				float:right;
+                }
+                #navMain div.navSearch input {
+
+                    height: 25px;
+                    position: relative;
+                    top: 3px;
+                    -webkit-appearance:none;
+                    background-color:#0a4771;
+                    border:none;
+                    color:white;
+    				/*border-top-left-radius:2px;
+    				border-bottom-left-radius:2px;*/
+
+                }
+
+				#navMain div.navSearch input.searchBox {
+					border-radius: 2px 0px 0px 2px; 
+    				float:left;
+    				padding-left:5px;
+				}
+form.search span.searchButtonWrapper {
+	background-color: #0A4771; 
+    margin-left:-4px;
+    display:block;
+    position:relative;
+    width:25px;
+    height:25px;
+    float:left;
+    top:3px;
+    border-radius:2px;
+}    
+                #navMain div.navSearch input.searchButton {
+
+
+                    /*width:25px;
+                    height: 25px;*/
+                    background-color:#0F6EB1;
+                    /*margin-left:-4px;*/
+                    /*border: 2px solid #0a4771;*/
+                    cursor:pointer;
+					border-radius:2px;
+    				/*margin:2px;*/
+        			width:21px;
+    				height:21px; 
+    				left:-2px;
+    				top:2px;
+                }
+
+
+        input.searchButton {
+            background:url(clientlibs_newUS/us/refresh/LM-magnify.png) no-repeat 4px 3px;
+            border: none;
+            vertical-align: top;
+
+            /*width: 80px;*/
+
+        }
+
+
+
+                
+    /* Capabilities page - slideshow */
+           div.upperFeature div.slideshowContainer {
+                position: relative;
+                height: 310px;
+                width: 680px;
+                
+                background: #fff;
+                overflow: hidden;
+                z-index: 10;
+            }
+            
+            /* wrapper that contains the slides */
+            div.upperFeature div.slideshow {
+                position: relative;
+                height: 310px;
+                width: 680px;
+            }
+            
+            /* the slide */
+            div.upperFeature div.moduleSlideshow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 310px;
+                width: 680px;               
+                z-index: 20;
+            }
+                div.upperFeature div.moduleSlideshow div {}
+                    div.upperFeature div.moduleSlideshow div.moduleHead {}
+                    div.upperFeature div.moduleSlideshow div.moduleBody {
+                        bottom: 0;
+                        height: 45px;
+                        left: 0;
+                        padding: 20px;
+                        position: absolute;
+                        width: 360px;
+                        z-index: 50;
+                    }
+                    
+                    div.upperFeature div.moduleSlideshow div.moduleFoot {}
+                    
+                    div.upperFeature div.moduleSlideshow div.moduleInfo {display:none;}
+                    
+                div.upperFeature div.moduleSlideshow img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 310px;
+                    width: 680px;
+                    
+                    z-index: 30;
+                }
+               div.upperFeature div.moduleSlideshow a {
+                    color: #FFF;
+                    z-index:50;
+                }
+                div.upperFeature div.moduleSlideshow h1 {
+                    color: #FFF;
+                    font: bold 14px/15px Arial, Helvetica, sans-serif;
+                    margin: 0;
+                    padding: 15px 0;
+                }
+            
+            /* the navigation */
+           div.upperFeature  div.slideshowNav {
+                bottom: 0;
+                left: 400px;
+                height: 65px;
+                padding: 10px 20px; 
+                position: absolute;
+                width: 280px;           
+                z-index: 40;
+            }
+              div.upperFeature div.slideshowNav div {
+                  display: inline;
+                  float:right;
+                }
+              div.upperFeature div.slideshowNav a {
+                    margin: 5px;
+                    color: #FFF;
+                    cursor: pointer;
+                    font: 30px Arial, sans-serif;
+                }
+                    div.upperFeature div.slideshowNav a.slideshowHighlight { 
+                        color: #084895;
+                    }
+            
+                div.upperFeature div.slideshowNavPager {
+                    margin: 15px 40px 0 0;
+                }
+                
+                
+    /* Capabilities page - selected products carousel */
+        div.selectedProducts {
+            margin-top: 25px;
+        }
+            div.selectedProducts h1 {
+                font: 14px/22px DINWeb-Medium, sans-serif;
+                color: #003366;
+                text-transform: uppercase;
+            }
+            div.selectedProductsCarousel h1 {
+                color: #696a6c;
+                font: bold 12px/30px Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                text-transform: capitalize;
+            }
+
+            /* contains the slides wrapper and the nav DAS - commented out height for product name length*/
+            div.carouselContainer {
+                background: #fff;
+                border-bottom: 1px solid #e6e7e7;
+                height: 133px; 
+                margin-bottom: 15px;
+                overflow: hidden;
+                position: relative;
+                width: 685px;
+            }
+
+            /* wrapper that contains the slides */
+            div.carousel {
+                font: bold 12px/14px sans-serif;
+                position: relative;
+                height: 130px;
+                width: 680px;
+                border-top: 10px solid #fff;
+            }
+                /* DAS - set a fixed height */
+                div.selectedProductsCarousel {
+                    /*width:650px; */
+                    float:left;
+                    /* height:133px; */
+                    margin-left: 5px;
+                    _margin-right: 5px;
+                     height: 122px;
+                    overflow: hidden;
+                    position: relative;
+                    width: 625px;                    
+                }
+                /* wrapper that contains the modules */
+                div.carousel div.carouselSlide {
+                    background: #fff;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 130px;
+                    width: 680px;
+                }
+            
+            /* the slide module */
+            div.moduleCarousel {
+                float: left;
+                width: 115px;
+                margin: 0 5px;
+                _margin: 0 2px;
+                padding: 0;
+            }
+                div.moduleCarousel img {
+                    border: 0;
+                    height: 70px;
+                    width: 115px;
+                }
+                div.moduleCarousel h1 {
+                    font: bold 12px/14px sans-serif;
+                    margin: 10px 0 0 0;
+                    text-align: center;
+                }
+                    div.moduleCarousel a:hover h1 {
+                        margin-top: 8px;
+                        text-decoration: underline;
+                    }
+                    div.moduleCarousel a:hover img {
+                        border: 1px solid #084389;
+                    }
+            
+            /* the navigation */
+            div.carouselNav {
+                text-align: center;
+                float:left;
+                font: normal 10px sans-serif;
+                width: 25px;
+            }
+                div.carouselNav a {
+                    cursor: pointer;
+                }                   
+                    div.carouselNav a.carouselNavPrev {}
+                        div.carouselNav a.carouselNavPrev:hover {}
+                    
+                    div.carouselNav a.carouselNavNext {}
+                    div.carouselNav a.carouselHighlight { 
+                        font-weight: bold;
+                        color: red;
+                        text-decoration: underline;
+                    }
+                div.carouselNav div {}
+                    div.carouselNav div.carouselNavPager {
+                    }
+
+/*multimedia slideshow*/
+    /* when the container can be a 'link', need to provide the user some feedback on that; */
+    div.clickable {
+        cursor: pointer;
+    }
+    
+    /* contains the slides wrapper and the nav */
+    body.multimedia div.carouselContainer {
+        background: #fff;
+        width: 680px;
+        height: 360px;
+        overflow: hidden;
+        position: relative;
+    }
+        /* only want these styles with JS enabled; */
+        body.multimedia div.carouselContainer div.multimediaCarousel {
+            background: transparent;
+            position: absolute;
+            bottom: 10px;
+            left: 50px;
+            width: 680px;
+            *width: 584px;
+            height: 50px;
+            z-index: 11;
+        }
+    
+    /* wrapper that contains the slides */
+    body.multimedia div.multimediaCarousel {
+        position: relative;
+        background: #fff;
+        width: 680px;
+        height: 360px;
+    }
+        /* wrapper that contains the modules */
+        body.multimedia div.multimediaCarousel div.carouselSlide {
+            position: absolute;
+           /* bottom: 10px; */  /* DAS - fix carousel thumbs */
+            left: 50px;
+            height: 50px;
+            width: 680px;
+            *width: 584px;
+        }
+    
+    /* the slide module */
+    body.multimedia div.moduleCarousel {
+        float: left;
+        height: 50px;
+        width: 80px;
+        margin: 0 8px;
+        padding: 0;
+    }
+        body.multimedia div.moduleCarousel img {
+            border: 0;
+            height: 50px;
+            width: 80px;
+        }
+    
+    /* the navigation */
+    body.multimedia div.carouselNav {
+        position: absolute;
+        bottom: 0;
+        width: 680px;
+        height: 70px;
+        background: #000;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+        body.multimedia div.carouselNav a {
+            position: absolute;
+            width: 17px;
+            height: 22px;
+            cursor: pointer;
+            z-index: 10;
+        }
+            body.multimedia div.carouselNav a.carouselNavPrev {
+                bottom: 24px;
+                left: 19px;
+                background: url(../lockheed/img/bgArrowLeft.png) no-repeat;
+            }
+            body.multimedia div.carouselNav a.carouselNavNext {
+                bottom: 24px;
+                right: 19px;
+                background: url(../lockheed/img/bgArrowRight.png) no-repeat;
+                z-index: 11;
+            }
+/*end slideshow css*/
+
+/*colorbox styles*/
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff;}
+#colorbox{}
+    #cboxContent{margin-top:32px; overflow:visible;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{background:#000; padding:1px;}
+        #cboxLoadingGraphic{background:url(../lockheed/img/loading.gif) no-repeat center center;}
+        #cboxLoadingOverlay{background:#000;}
+        #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+        #cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(../lockheed/img/controls.png) no-repeat 0 0;}
+        #cboxPrevious{background-position:0px 0px; right:44px;}
+        #cboxPrevious.hover{background-position:0px -25px;}
+        #cboxNext{background-position:-25px 0px; right:22px;}
+        #cboxNext.hover{background-position:-25px -25px;}
+        #cboxClose{background-position:-50px 0px; right:0;}
+        #cboxClose.hover{background-position:-50px -25px;}
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+        .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+        .cboxSlideshow_on #cboxSlideshow.hover{background-position:-100px -25px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+        .cboxSlideshow_off #cboxSlideshow.hover{background-position:-75px -25px;}
+
+
+
+}
+
+@media print {
+    * { background: none !important; }
+}
+
+/*** dsanchez ***/
+.floatl {
+    float:left
+}
+
+.clearBoth {
+   clear:both;
+}
+div.centerColFullRight {
+    display: inline;
+    float: right;
+    /*margin-right: 15px;*/
+    width: 700px;
+}
+
+
+.floatleft
+{
+    padding: 5px;
+    float:left;
+}
+.floatright 
+{
+    padding: 5px;
+    float:right;
+}
+/* Aron Ceely DR3448 added style for bluebg class to change the text font to white*/
+.bluebg
+{
+    background-color: #254264;
+    color: #FFFFFF;
+    padding-left: 3px;
+}
+
+.dgraybg
+{
+    background-color: #151515;
+    color: #CCC;
+    padding-left: 3px;
+}
+
+
+div.bluebg p {
+	color:white;
+}
+
+div.dgraybg p 
+{
+    color: #CCC;
+
+
+
+
+
+} 
+
+.dgraybg p 
+{
+    color: #CCC;
+}
+
+div.rail .dgraybg p, div.rail .dgraybg h1, div.rail .dgraybg h2, div.rail .dgraybg h3 {
+    color:#CCC;
+ }
+
+div.dgraybg h1, div.dgraybg h2, div.dgraybg h3 {
+    Color: #CCC;
+}
+
+div.dgraybg td
+{
+    color:#CCC;
+    font: 12px/16px sans-serif;
+    padding: 10px 0;    
+}
+
+/* Dennis Sanchez - fix issue */
+div.rail .bluebg p, div.rail .bluebg h1, div.rail .bluebg h2, div.rail .bluebg h3 {
+    color:#FFFFFF;
+ }
+
+.graybg
+{
+    background-color: #F1F1F1;
+    padding-left: 3px;
+}
+
+
+
+hr
+{
+    color: #E7E7E7;
+    background-color: 
+}
+
+div.rteText td, div.graybg td
+{
+     color: #696A6C;
+    font: 12px/16px sans-serif;
+    padding: 10px 0;    
+}
+
+div.bluebg td {
+    color:white;
+    font: 12px/16px sans-serif; 
+}
+
+/*
+   div.rteText h1, div.bluebg h1, div.graybg h1 {
+        color: #084690;
+        font: normal 30px/30px DINWeb-Medium, sans-serif;
+    }
+*/    
+   div.rteText h2, div.bluebg h2, div.graybg h2 {
+        color:#494949;
+        font: bold 18px/16px DINWeb-Medium, sans-serif;
+    }
+   div.rteText h3, div.bluebg h3, div.graybg h3 {
+        color: #494949;
+        font: bold 12px/16px DINWeb-Medium, sans-serif;
+        padding-bottom: 5px;
+    }
+    div.rteText    h3 a {
+            color: #074087;
+            /* Removed by request. See also H3 a MDS-QI 2011-11-23
+            font-size: 10px;
+            font-weight: normal;
+            text-transform: uppercase;
+            */
+        }
+   div.wideRight div.rail,
+   div.fullRight div.rail {
+       padding-top: 0px;
+   }
+   div.section a {
+       color: #08458F;
+   }
+div.bluebg a
+{
+    color: #999999;
+}    
+div.dgraybg a
+{
+    color: #1088FF;
+}  
+   div.clearance tr {
+    color: #000000;
+    font: 12px/16px sans-serif;
+  
+   }
+      div.clearance th {
+    font-weight: bold;
+    color: #000000;
+    font: 12px/16px sans-serif;
+  
+   }
+   
+    /* Tradeshow slides */
+           div.tradesh div.upperFeature div.slideshowContainer {
+                position: relative;
+                height: 310px;
+                width: 460px;
+                
+                background: #fff;
+                overflow: hidden;
+                z-index: 10;
+            }
+            
+            /* wrapper that contains the slides */
+            div.tradesh div.upperFeature div.slideshow {
+                position: relative;
+                height: 310px;
+                width: 460px;
+            }
+            
+            /* the slide */
+            div.tradesh div.upperFeature div.moduleSlideshow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 310px;
+                width: 460px;               
+                z-index: 20;
+            }
+                div.tradesh div.upperFeature div.moduleSlideshow div {}
+                    div.tradesh div.upperFeature div.moduleSlideshow div.moduleHead {}
+                    div.tradesh div.upperFeature div.moduleSlideshow div.moduleBody {
+                        bottom: 0;
+                        height: 45px;
+                        left: 0;
+                        padding: 20px;
+                        position: absolute;
+                        width: 360px;
+                        z-index: 50;
+                    }
+                    
+                    div.tradesh div.upperFeature div.moduleSlideshow div.moduleFoot {}
+                    
+                    div.tradesh div.upperFeature div.moduleSlideshow div.moduleInfo {display:none;}
+                    
+                div.tradesh div.upperFeature div.moduleSlideshow img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 310px;
+                    width: 460px;
+                    
+                    z-index: 30;
+                }
+               div.tradesh div.upperFeature div.moduleSlideshow a {
+                    color: #FFF;
+                    z-index:50;
+                }
+                div.tradesh div.upperFeature div.moduleSlideshow h1 {
+                    color: #FFF;
+                    font: bold 14px/15px Arial, Helvetica, sans-serif;
+                    margin: 0;
+                    padding: 15px 0;
+                }   
+   
+            /* the navigation */
+           div.tradesh div.upperFeature  div.slideshowNav {
+                bottom: 0;
+                left: 250px;
+                height: 65px;
+                padding: 10px 20px; 
+                position: absolute;
+                width: 200px;           
+                z-index: 40;
+            }
+              div.tradesh div.upperFeature div.slideshowNav div {
+                  display: inline;
+                  float:right;
+                }
+              div.tradesh div.upperFeature div.slideshowNav a {
+                    margin: 5px;
+                    color: #FFF;
+                    cursor: pointer;
+                    font: 30px Arial, sans-serif;
+                }
+                    div.tradesh div.upperFeature div.slideshowNav a.slideshowHighlight { 
+                        color: #084895;
+                    }
+            
+                div.tradesh div.upperFeature div.slideshowNavPager {
+                    margin: 15px 40px 0 0;
+                }     
+                
+div.rail div.productModule
+{
+    padding-top: 30px;
+}
+.addthis_button_facebook_like
+{
+    width:80px;
+    height: 30px;
+}
+.addthis_button_tweet
+{
+    width:85px;
+    height: 30px;
+}
+.addthis_button_google_plusone
+{
+    width:57px;
+    height: 30px;
+}
+div.addthis_toolbox 
+{
+    width:260px;
+}
+.addthis_button_linkedin_counter {
+    width: 80px;
+    height: 30px;
+} 
+
+small
+{
+        color: #696a6c;
+        font-size: 11px;
+        font-family: sans-serif;
+        padding: 10px 0;
+        line-height: 110%;
+        display:block;
+        font-style:italic;
+}
+/* Matrix */
+.matrixContent 
+{
+    margin-right:15px;
+}
+.matrixCell
+{
+    position:relative;
+    float:left;
+    height:230px;
+    width:230px;
+}
+.matrixCell a 
+{
+    cursor:pointer;
+    text-decoration:none;
+}
+.matrixTitle
+{
+    position:absolute;
+    left:5px;
+    top:5px;
+    width:210px; 
+    text-shadow: 0.2em 0.2em 0.2em black;
+    font-size: 1.4em;
+    color:white;
+    font-weight:bold;
+    height: 40px;
+    overflow:hidden;
+    line-height:150%;
+}
+.matrixGrayBottom
+{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    position:absolute;
+    bottom:10px;
+    width:220px;
+    height:2.4em;
+}
+.matrixTextBottom
+{
+    color:white;
+    font-size:11px;
+    margin:5px 3px 3px;
+    height:29px;
+    overflow:hidden;
+}
+
+.matrixTextMiddle
+{
+    position:absolute;
+    top:40%;
+    color:white;
+    font-size:11px;
+    margin:4px; 
+}  
+
+
+
+
+
+
+
+
+div.rteText h1, div.graybg h1, div.bluebg h1, div.dgraybg h1 {
+    padding: 3px;
+    font: 14px sans-serif;
+}
+div.bluebg h1 {
+    color:#999999;
+}
+
+.quoteLeft {
+    float:left;
+    width: 240px;
+    font-size: 23px;
+    padding: 5px;
+    color: #013278; 
+    line-height: 105%;
+    font-weight: bold;
+} 
+
+.quoteRight {
+    float:right;
+    width: 240px;
+    font-size: 23px;
+    padding: 5px;
+    color: #013278;   
+    line-height: 105%;
+    font-weight: bold;
+} 
+
+.largeText {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+/* column control layouts */
+div.cq-colctrl-cols {width: 100%; float: left; }
+
+div.cq-colctrl-default { width: 100%;}
+
+/* layout 0 : 50% 50% ( grid6 + grid6 ) */
+div.cq-colctrl-lt0 { width:100%; }
+div.cq-colctrl-lt0-c0 { float:left; width: 49%; margin-right:1%}
+div.cq-colctrl-lt0-c1 { float:left;width: 49%; margin-left: 1%}
+
+/* layout 1 : 33% 33% 33%( grid4 + grid4 + grid4 ) */
+div.cq-colctrl-lt1 {width:100%; }
+div.cq-colctrl-lt1-c0 { float:left;width: 32%; margin-right: 1%;}
+div.cq-colctrl-lt1-c1 { float:left;width: 32%; margin-left: 1%; margin-right: 1%;}
+div.cq-colctrl-lt1-c2 { float:left;width: 31%; margin-left: 1%; }
+
+/* layout 2: 16% 16% 16% 33% ( grid2.6 + grid2.6 + grid2.6 + grid4 ) */
+div.cq-colctrl-lt2 {width:100%; }
+div.cq-colctrl-lt2-c0 { float:left;width: 24%; margin-right: 1%;}
+div.cq-colctrl-lt2-c1 { float:left;width: 23%; margin-left: 1%; margin-right: 1%}
+div.cq-colctrl-lt2-c2 { float:left;width: 24%; margin-left: 1%; margin-right: 1%}
+div.cq-colctrl-lt2-c3 { float:left;width: 23%; margin-left: 1% }
+
+/* layout 3: 4 x 25% ( grid3 + grid3 + grid3 + grid3 ) */
+div.cq-colctrl-lt3 {width:100%; }
+div.cq-colctrl-lt3-c0 { float:left;width: 24%; margin-right: 1%;}
+div.cq-colctrl-lt3-c1 { float:left;width: 23%; margin-left: 1%; margin-right: 1%;}
+div.cq-colctrl-lt3-c2 { float:left;width: 24%; margin-left: 1%; margin-right: 1%;}
+div.cq-colctrl-lt3-c3 { float:left;width: 23%; margin-left: 1%; }
+
+/* layout 4: 5 x 20% ( grid2.5 + grid2.5 + grid2.5 + grid2.5 + grid2.5 ) */
+div.cq-colctrl-lt4 {width:100%; } 
+div.cq-colctrl-lt4-c0 { float:left;width: 19%; margin-right: 1%;}
+div.cq-colctrl-lt4-c1 {float:left; width: 18%; margin-left: 1%; margin-right: 1%;}
+div.cq-colctrl-lt4-c2 { float:left;width: 19%; margin-left: 1%; margin-right: 1%;}
+div.cq-colctrl-lt4-c3 { float:left;width: 18%; margin-left: 1%; margin-right: 1%;}
+div.cq-colctrl-lt4-c4 { float:left;width: 18%; margin-left: 1%; }
+
+/* widepage layouts */
+
+/* layout 5 : 50% 50% ( grid8 + grid8 ) */ 
+div.cq-colctrl-lt5 {width:100%; }
+div.cq-colctrl-lt5-c0 { float:left;width: 49%; margin-right:1%}
+div.cq-colctrl-lt5-c1 { float:left;width: 49%; margin-left: 1%}
+
+/* layout 6 : 25% 25% ( grid4 + grid4 + grid4 + grid4) */
+div.cq-colctrl-lt6 {width:100%; }
+div.cq-colctrl-lt6-c0 { float:left;width: 24%; margin-right:1%}
+div.cq-colctrl-lt6-c1 { float:left;width: 23%; margin-left: 1%; margin-right:1%}
+div.cq-colctrl-lt6-c2 {float:left; width: 24%; margin-left: 1%; margin-right:1%}
+div.cq-colctrl-lt6-c3 { float:left;width: 23%; margin-left: 1%} 
+
+/* Blog */
+div.blog div.navigation {
+	margin-right:15px;
+    margin-top:10px;
+}
+div.blog div.navigation:after {
+	float:left;
+}
+div.blog div.navigation a {
+	font: 14px/25px Arial,sans-serif;
+    color: #074187;
+}
+div.blog div.navigation div.alignright{
+	float:right;
+}
+div.blog div.navigation div.alignleft{
+	float:left;
+}
+div.blog div.title {
+    clear:both;
+	border:none;
+    margin-bottom:0px;
+    }
+div.blog div.par {
+	border-bottom: 1px solid #E7E7E7;
+    padding-right: 10px;
+    /*width:695px;*/
+                }
+
+div.pagination div.next {
+	float:right;
+}
+div.archive h2,
+div.pages h2,
+div.authors h2,
+div.categories h2{
+	margin:0;
+    padding:0;
+}
+div.archive ul li:before,
+div.pages ul li:before,
+div.authors ul li:before,
+div.categories ul li:before
+{
+	content: "» ";
+    padding:5px;
+}
+div.archive ul li,
+div.pages ul li,
+div.authors ul li,
+div.categories ul li
+{
+	margin-left: 10px; 
+}
+div.fullRight div.title h1 {
+	width:580px;
+}
+
+table.cellPadding2 tbody tr td,
+table.cellPadding2 tr td
+{
+	padding:2px;
+}
+
+table.cellPadding5 tbody tr td,
+table.cellPadding5 tr td
+{
+	padding:5px;
+} 
+
+/* News styles */
+.newsRow {
+    width:700px;
+    float:left;
+    position:relative;
+}
+.newsTile {
+    margin:10px;
+    padding:5px;
+    border-style:solid;
+    border-width:1px;
+    float:left;
+    width:200px;
+    height:300px;
+    position:relative;
+    display:block;
+}
+.newsImage img {
+    width:200px;
+    height:125px;
+    opacity:1.0;
+}
+.newsTopic {
+    font-size: 9pt;
+    opacity:1.0;
+}
+.newsTitle {
+    margin: 5px 0px 5px 0px;
+    font-size: 14pt;
+    opacity:1.0;
+}
+.newsArea {
+	height:44%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.newsTeaser {
+    font-size: 11pt;
+    opacity:1.0;
+}
+.newsTeaserText {
+
+    }
+.newsDate {
+    margin-top:10px;
+    font-size: 8pt;
+    vertical-align:bottom;
+    opacity:1.0;
+}
+span.divider {
+    font-size: 9pt;
+}
+
+.topNewsRow {
+    width:660px;
+    float:left;
+    border-style:solid;
+    border-width:1px;
+    margin:10px;
+    padding: 5px;
+    height:150px;
+}
+.topNewsLeft {
+    float:left;
+    margin-right:10px;
+    margin-bottom:-5px;
+}
+.topNewsRight {
+    float:left;
+    width:60%;
+    height:100%;
+}
+
+.topNewsImage {
+	margin:0px;
+}
+.topNewsImage img {
+    width:250px;
+    height:150px;
+    margin:0px;
+}
+
+.topNewsTopic {
+    font-size: 8pt;
+}
+.topNewsTitle {
+    margin: 10px 0px 10px 0px;
+    font-size: 14pt;
+}
+.topNewsTeaser {
+    font-size: 11pt;
+}
+.topNewsDate { 
+    margin-top:10px;
+    font-size: 8pt;
+    vertical-align:bottom;
+}
+.topNewsArea {
+	height:74%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.newsTileRSS {
+	background-color: #CCCCCC;
+    margin:10px;
+    padding:5px;
+    border-style:solid;
+    border-width:1px;
+    float:left;
+    width:200px;
+    height:300px;
+    position:relative;
+    display:block;         
+    }
+.rssTop {
+    border-bottom: 1px solid; 
+    height:40%;
+    margin:-5px;
+    padding:5px;
+}
+
+.rssBottom {
+    margin-top:5px;
+
+}
+.rssBottom p, .rssTop p {
+	margin-top:-10px;
+    }
+.showMoreButton {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  color: #FFFFFF;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align:center;
+  width:100px;
+  margin-left:auto;
+  margin-right:auto;
+  <!--[if IE]>
+    margin-top:10px;
+    martin-bottom:10px;
+  <![endif]-->  
+}
+.showMoreButton:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor:pointer;
+
+            }
+
+.newsList a, .newsList a:hover {
+	text-decoration:none;
+    }
+div.topNewsTitle a, div.topNewsTopic a, div.topNewsDate a,
+div.newsTitle a, div.newsTopic a, div.newsDate a
+{
+	color: #797878; 
+
+}
+div.topNewsTitle a:hover, div.topNewsTopic a:hover, div.topNewsDate a:hover,
+div.newsTitle a:hover, div.newsTopic a:hover, div.newsDate a:hover
+{
+	text-decoration:underline;
+
+}
+
+.bottomRelated {
+    width:100%;
+    height:220px;
+}
+
+.relatedNormal {
+    float:left;
+    padding:5px;
+    height:200px;
+    width:165px;
+    position:relative;
+}
+
+.relatedImage {
+    position:relative;
+}
+.relatedImage img {
+    width:165px;
+    height:200px;
+}
+.relatedContent {
+    position:absolute;
+    background:rbg(0,0,0);
+    background:rgba(0,0,0,0.5);
+    background: transparent\9; 
+    top:120px;
+    left:5px;
+    width:165px; 
+    height:85px;
+    text-overflow:none;
+    overflow:hidden;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+    zoom: 1;    
+}
+.relatedTitle {
+    padding:2px 2px 5px 2px;
+    color:rgb(240,240,240);
+    font-size:12pt;
+    font-weight:200;
+}
+.relatedTeaser {
+    color:rgb(240,240,240);
+    padding:2px;
+    font-weight:none;
+    font-size:10pt;
+    font-weight:200;
+}
+.newsHeader {
+	font-weight:bold;
+    font-size:14pt;
+    margin-left:10px;
+    }
+/* New Home Page */
+#newHeader {
+	background: url(clientlibs_newUS/us/refresh/LM-header1.png) no-repeat 0 0;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	height:99px;
+	width:100%;
+	background-color: #243c5b;
+}
+
+#header div img {
+	padding 10px 0;
+
+}
+
+#extendSlide {
+	background: none repeat scroll 0 0 rgba(0,0,0,0.5);
+	position:absolute;
+	top:145px;
+	left:0px;
+	height:100px;
+	z-index:0;
+	width:400px;
+}
+
+#newRibbon {
+	background: url(clientlibs_newUS/us/refresh/LM-background-lower.png) repeat-x 0 0;
+	position:absolute;
+	top:651px;
+	left:0;
+	z-index:0;
+	height:330px;
+	width:100%;
+}
+
+        body.home div.centerColWhole {
+            margin: 0 17px;
+            _margin: 0 10px;
+            width: 610px;
+                        box-shadow: 0px 17px 36px 0px rgba(0,0,0,0.75);
+                   -moz-box-shadow: 0px 17px 36px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 0px 17px 36px 0px rgba(0,0,0,0.75);     
+        }
+        /*
+        body.home div.centerColWhole img.centerBG {
+            width: 659px;
+            height:340px;
+        }*/
+        
+        body.home div.centerColWhole div.homeCenter {
+            z-index:100;
+            width:340px;
+    		color:#282929;
+            background-color: rgba(255,255,255,0.7);
+ 			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF)"; /* IE8 */
+    		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);   /* IE6 & 7 */
+           	color:black;
+    		overflow:hidden;
+        }
+        
+        body.home div.centerColWhole div.homeCenter div.topHeader {
+        	font: 36px/36px LMHome,sans-serif;
+    		padding-bottom:5px;
+    		color:#282929; 
+    		padding-top:5px;
+        }
+
+        body.home div.centerColWhole div.homeCenter div.subHeader {
+        	font: 18px/18px LMHome,sans-serif;
+    		color:#282929;  
+        }        
+        
+        body.home div.centerColWhole div.homeCenter div.centerBody {
+        
+        }        
+
+        body.home div.centerColWhole div.homeCenter div.link {
+
+        }        
+        
+		body.home div.socialLinks {
+			width:40px;
+			float:left;
+			margin-top:30px;
+			margin-left:5px;
+		}
+		body.home div.socialLinks img {		
+			margin:2px;
+		}
+		
+		body.home div.homeSlideshow {
+			margin-left:20px;
+		}
+		div.centerColWhole div.parbase p {
+			color:#282929; 
+    		padding-top:15px;
+		}
+
+@font-face {
+    font-family: 'LMHome';
+    src: url('clientlibs_newUS/us/refresh/fonts/agencyfb-regular-webfont.eot');
+    src: url('clientlibs_newUS/us/refresh/fonts/agencyfb-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('clientlibs_newUS/us/refresh/fonts/agencyfb-regular-webfont.woff') format('woff'),
+         url('clientlibs_newUS/us/refresh/fonts/agencyfb-regular-webfont.ttf') format('truetype'),
+         url('clientlibs_newUS/us/refresh/fonts/agencyfb-regular-webfont.svg#agencyfb_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LMHome';
+    src: url('clientlibs_newUS/us/refresh/fonts/agencyfb-bold-webfont.eot');
+    src: url('clientlibs_newUS/us/refresh/fonts/agencyfb-bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('clientlibs_newUS/us/refresh/fonts/agencyfb-bold-webfont.woff') format('woff'),
+         url('clientlibs_newUS/us/refresh/fonts/agencyfb-bold-webfont.ttf') format('truetype'),
+         url('clientlibs_newUS/us/refresh/fonts/agencyfb-bold-webfont.svg#agencyfbbold') format('svg');
+	font-weight: bold;
+    font-style: normal;
+}
+
+body.home div.moduleSlideshow div.moduleBody {
+}
+
+.tablePadding2 {
+		padding:2px;
+    }
+.tablePadding5 {
+		padding:2px;
+    }
+
+div.share a {
+	padding:2px;
+        }
+div.snap_preview {
+	margin-bottom:30px;
+    } 
+
+#navMain div ul li.menu3col:hover div {
+	width:960px;
+}
+#navMain div ul li.menu2col:hover div {
+	width:760px;
+}
+#navMain div ul li.menu1col:hover div {
+	width:500px;
+}
+
+/* menu */
+#navMain div ul li div div div.mulcol ul li ul li {
+	/*padding:0px;*/
+	height:auto;
+	width:210px;
+    border-left:none;
+    padding:3px 0px 0px 0px;
+}
+#navMain div ul li div div div.mulcol ul li ul li a{
+	font-size:12px;
+	font-weight:normal;
+	line-height:105%;
+}
+#navMain div ul li div div div.mulcol ul li ul {
+	margin: 0px 0 6px 0;
+	padding-left:0px;
+    border-left:none;
+}
+#navMain div ul li div div div.mulcol ul li,
+#navMain div ul li div div div.mulcol ul.last-child,
+#navMain div ul li div div div.mulcol ul.last-child li.last-child,
+#navMain div ul li div div div.mulcol ul.last-child li.first-child{
+	padding:3px 0px 0px 0px;
+	height:auto;
+	border-left:none;
+}
+
+#navMain div ul li div div div.mulcol ul li a{
+	font-size:14px;
+	font-weight:bold;
+    border-left:none;
+} 
+#navMain div ul li div div div.mulcol ul li ul li {
+
+} 
+
+/* New BG */
+div.medblueBG {
+	background-color: rgb(0,126,163);
+    color:white;
+    padding-left:3px;
+}
+div.darkgreenBG {
+	background-color: rgb(0,105,60);
+    color:white;
+    padding-left:3px;
+}
+div.purpleBG {
+	background-color: rgb(89,49,96);
+    color:white;
+    padding-left:3px;
+}
+div.tealBG {
+	background-color: rgb(0,93,94);
+    color:white;
+    padding-left:3px;
+}
+div.medblueBG p, div.darkgreenBG p,
+div.purpleBG p, div.tealBG p {
+	color:white;
+    padding: 0;
+    margin-bottom:10px; 
+} 
+
+/* New Text */
+.textLGray, .textLWhite, .textLBlack {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.textWhite, .textLWhite {
+	color:white;
+}
+.textBlack, .textLBlack {
+	color:black;
+}            
+.textGray, .textLGray {
+	color:#797878; 
+}
+
+span.textWhite a, span.textLWhite a {
+	color:#527DB1;
+}
+span.textBlack a, span.textLBlack a {
+	color:#074187;
+}            
+span.textGray a, span.textLGray a { 
+	color:#527DB1;  
+}
+
+.x-font-select .textWhite,
+.x-font-select .textGray,
+.x-font-select .textBlack,
+.x-font-select .textLWhite,
+.x-font-select .textLGray,
+.x-font-select .textLBlack,
+.x-font-select .largeText {
+	font-size:1em;
+    line-height:1.0; 
+    color:black;
+}
+
+.agency {
+        font-family:LMHome,DINWeb-Medium, sans-serif;
+}
+
+#footer .copyright {
+	margin:auto;
+    color:white;
+    width:350px;
+    height:50px;
+    float:left;
+    }
+#footer div.sub ul.socialLinks {
+	float:left;
+    margin-left:300px;
+}
+
+#footer div.sub ul.footer-links {
+	margin-left:40px;
+    margin-top:20px;
+}
+
+#footer div.sub ul.footer-links li {
+	padding: 0 20px;
+}
+
+#footer div.sub {
+	height:70px;
+
+} 
+
+div.image small {
+	color: #00A3E0;
+    padding-bottom:15px;
+}
+
+/*** /dsanchez **/
+
+/*sou form*/
+.form_row { overflow:hidden; clear:both; margin: 5px 0 0 0; }
+.form_leftcol { float: left; width: 140px; font-weight:bold; font-size: 0.8em;}
+.radio .form_row .form_leftcol, .checkbox .form_row .form_leftcol { width:100%; } 
+.form_rightcol { font-size: 0.8em;}
+.form_leftcollabel { display:inline; }
+.form_leftcolmark { color:red; display:inline; }
+.form_row_description { font-size:0.6em; }
+.form_error { color:red; }
+input.form_field_radio { margin: 0 0 0 140px; } 
+input#_content_lockheed-site_us_employees_security-clearance_contact_jcr_content_content_middle_start_Topic_Other { margin: 0 0 0 30px; }
+div.rteText td, div.rteText td p, 
+div.bluebg p, div.bluebg td, div.bluebg td p,
+div.graybg p, div.graybg td, div.graybg td p,
+div.dgraybg p, div.dgraybg td, div.dgraybg td p
+{ padding: 0; }
+
+div.bluebg p, div.graybg p, div.dgraybg p {
+        margin-bottom:10px;
+}
+
+
+/*JEM rich text editor styles*/
+div.rteText ul, div.rteText ol, 
+div.bluebg ul, div.bluebg ol,
+div.graybg ul, div.graybg ol,
+div.dgraybg ul, div.dgraybg ol
+ {
+    margin: 0 5px 2px 10px;
+}
+div.rteText p {
+    color: #696A6C; 
+}
+div.rteText ul li, div.bluebg ul li, div.graybg ul li, div.dgraybg ul li {
+                list-style: none;
+                background:url(../lockheed/img/bulletArticle.png) no-repeat 0 15px;
+                *background:url(../lockheed/img/bulletArticle.png) no-repeat 0 17px;
+                padding: 10px 5px 0 10px;
+} 
+
+div.bluebg ul li {
+    color:white;
+}
+
+div.graybg ul li {
+    color: #696A6C; 
+} 
+
+div.rail div.graybg ul li {
+    color: #929292; 
+}
+
+div.rteText ol li, div.bluebg ol li, div.graybg ol li, div.dgraybg ol li {
+    list-style:decimal;
+    padding:2px;
+}
+
+div.dgraybg ul li, div.dgraybg ol li {
+    color: #CCC;
+    }
+/* /JEM */     

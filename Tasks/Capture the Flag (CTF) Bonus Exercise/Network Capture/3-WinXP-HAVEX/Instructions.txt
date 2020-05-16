@@ -1,0 +1,3 @@
+WINXP-HAVEX
+
+What HAVEX malware indicator-of-compromise (IOC) is found in this capture?
